@@ -5,8 +5,6 @@
 
 # Team
 
----
-
 ## Have Fun
 
 If there is one thing to remember, it's this: have fun.
@@ -48,8 +46,6 @@ If you change direction, get a new idea, or discover a problem, share it immedia
 
 # Brainstorming
 
----
-
 ## Start Alone
 
 When the theme is revealed, start by working individually.
@@ -81,8 +77,6 @@ This allows people to switch to "nice-to-have" tasks when they are blocked.
 For instance, Bob is waiting for Alice's asset to finish a must-have feature, so he works on a nice-to-have task instead.
 
 # Gameplay
-
----
 
 ## Focus on One Core Mechanic
 
@@ -121,8 +115,6 @@ If you finish early, move on to nice-to-have tasks.
 If learning a new tool is your challenge, then avoid adding other challenges on top of it.
 
 # Tools
-
----
 
 ## Choose Your Tools in Advance
 
@@ -163,8 +155,6 @@ Example:
 - Document the rules clearly
 
 # Workflow
-
----
 
 ## All Scales at 1
 
