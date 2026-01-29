@@ -17,4 +17,7 @@ Credit to of all tools and library used by the game.
 
 # Team
 
-#wip
+- Eva (programming)
+- Tiny (game design)
+- Louis (sound)
+- [Geekymoose](https://github.com/geekymoose) (art)
