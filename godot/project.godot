@@ -10,9 +10,20 @@ config_version=5
 
 [application]
 
-config/name="Poppy-please"
+config/name="Poppy Please"
+config/description="Global Game Jam 2026"
+run/main_scene="uid://beb7rd2gven0n"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+DebugMenu="*uid://cggqb75a8w8r"
+DebugManager="*uid://wva11bnjj2ko"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/debug_menu/plugin.cfg")
 
 [physics]
 
