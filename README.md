@@ -21,3 +21,4 @@ Credit to of all tools and library used by the game.
 - Tiny (game design)
 - Louis (sound)
 - [Geekymoose](https://github.com/geekymoose) (art)
+- [wsmind](https://github.com/wsmind)
