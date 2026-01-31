@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://yf2f68drlvqj"]
+
+[ext_resource type="Texture2D" uid="uid://c3b8koy5ii787" path="res://characters/worm/worm_idle_1.png" id="1_74jmy"]
+[ext_resource type="Texture2D" uid="uid://byw1esyyxb54q" path="res://characters/worm/worm_idle_2.png" id="2_ygbm4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vbe11"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_74jmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ygbm4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Worm" type="Node2D" unique_id=615808439]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=806401732]
+scale = Vector2(0.55, 0.55)
+sprite_frames = SubResource("SpriteFrames_vbe11")
+animation = &"idle"
