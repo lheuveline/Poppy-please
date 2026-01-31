@@ -24,3 +24,5 @@ position = Vector2(2, 378)
 
 [node name="Character1" parent="." unique_id=2040593931 instance=ExtResource("6_gwceb")]
 position = Vector2(480, 0)
+
+[editable path="Character1"]

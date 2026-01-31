@@ -5,4 +5,5 @@ func _ready() -> void:
 
 
 func _process(delta: float) -> void:
-	pass
+	if Input.is_action_just_pressed("throw_mask"):
+		print("[level_1] Mask button pressed")
