@@ -7,6 +7,7 @@ func _ready():
 func resume():
 	get_tree().paused = false
 	$AnimationPlayer.play_backwards("blur")
+	hide()
 
 func pause():
 	get_tree().paused = true
