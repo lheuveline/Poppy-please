@@ -4,9 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://cjafkdt4obng8" path="res://characters/maestro/maestro.tscn" id="2_bt44k"]
 [ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bc4seuffuekr4" path="res://player/player.tscn" id="4_kx6l7"]
-[ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://ui_hud/pause_menu.tscn" id="6_btoec"]
+[ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://ui/pause_menu.tscn" id="6_btoec"]
 [ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character_1/character1.tscn" id="6_gwceb"]
-[ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui_hud/hud.tscn" id="7_gwceb"]
+[ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
 
 [node name="Level_1" type="Node2D" unique_id=55783393]

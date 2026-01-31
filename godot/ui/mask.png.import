@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://flme2od6bunq"
-path="res://.godot/imported/boucle-sans-fin (1).png-1127348eef0e7570130b35decd8e171e.ctex"
+uid="uid://b7v8awvu1djrq"
+path="res://.godot/imported/mask.png-15e48d32e8c6b679af1d9dde006afb7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui_hud/boucle-sans-fin (1).png"
-dest_files=["res://.godot/imported/boucle-sans-fin (1).png-1127348eef0e7570130b35decd8e171e.ctex"]
+source_file="res://ui/mask.png"
+dest_files=["res://.godot/imported/mask.png-15e48d32e8c6b679af1d9dde006afb7f.ctex"]
 
 [params]
 
