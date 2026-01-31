@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://cjwm6dw4kjm7k"]
+
+[ext_resource type="FontFile" uid="uid://3a6yvj5wow85" path="res://Quicksand_Bold.otf" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://btm6oxk0wlctq" path="res://IMG_20250623_161010.jpg" id="1_7vrkn"]
+[ext_resource type="Script" uid="uid://ce072oxj8owl" path="res://main_menu.gd" id="1_jix8l"]
+[ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://Melt-Swashes.ttf" id="3_fu7sn"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
+texture = ExtResource("1_7vrkn")
+
+[sub_resource type="FontVariation" id="FontVariation_7vrkn"]
+base_font = ExtResource("1_06t4h")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fu7sn"]
+bg_color = Color(0.41522983, 0.6393183, 0.7120933, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="FontVariation" id="FontVariation_jix8l"]
+base_font = ExtResource("3_fu7sn")
+
+[node name="MainMenu" type="Control" unique_id=1699762443]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+script = ExtResource("1_jix8l")
+
+[node name="Panel" type="Panel" parent="." unique_id=459626700]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2014.0
+offset_top = -1347.0
+offset_right = 2104.0
+offset_bottom = 796.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1933118268]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.492
+anchor_top = 0.605
+anchor_right = 0.492
+anchor_bottom = 0.605
+offset_left = -461.64
+offset_top = -236.40002
+offset_right = 462.36
+offset_bottom = 236.09998
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1317193441]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9183024, 0.8959569, 0.7560493, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
+theme_override_font_sizes/font_size = 92
+theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
+text = "Start Game"
+
+[node name="Credits" type="Button" parent="VBoxContainer" unique_id=1593511198]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.91764706, 0.89411765, 0.75686276, 1)
+theme_override_fonts/font = SubResource("FontVariation_7vrkn")
+theme_override_font_sizes/font_size = 92
+theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
+text = "Credits"
+
+[node name="Label" type="Label" parent="." unique_id=1987486009]
+layout_mode = 0
+offset_left = 274.0
+offset_top = 124.0
+offset_right = 1688.0
+offset_bottom = 353.0
+theme_override_colors/font_color = Color(0.77774054, 0.86681354, 0.8884972, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.92941177)
+theme_override_constants/shadow_offset_x = 13
+theme_override_fonts/font = SubResource("FontVariation_jix8l")
+theme_override_font_sizes/font_size = 138
+text = "Mask that cacaphonia !"
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
