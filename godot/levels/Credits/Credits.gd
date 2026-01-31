@@ -10,10 +10,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-
-func _on_start_pressed() -> void:
-	get_tree().change_scene_to_file("res://levels/level_1/level_1.tscn")
-
-
-func _on_credits_pressed() -> void:
-	print("credits_pressed")
+func _on_return_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")
