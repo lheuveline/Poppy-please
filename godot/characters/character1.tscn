@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://b6cwrew5yl8rc"]
+
+[ext_resource type="Texture2D" uid="uid://uf1uwkewvgtf" path="res://icon.svg" id="1_m6l6w"]
+[ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character1.gd" id="1_rh6c5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_78yxt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_m6l6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_m6l6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_m6l6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_m6l6w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oqjd8"]
+radius = 134.99998
+height = 269.99997
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gvitu"]
+radius = 44.999996
+height = 109.99999
+
+[node name="Character1" type="AnimatedSprite2D" unique_id=2040593931 groups=["characters"]]
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_78yxt")
+autoplay = "default"
+script = ExtResource("1_rh6c5")
+
+[node name="Range" type="Area2D" parent="." unique_id=899758991]
+
+[node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=423472906]
+shape = SubResource("CapsuleShape2D_oqjd8")
+
+[node name="Click" type="Area2D" parent="." unique_id=1879170668]
+
+[node name="CollisionClick" type="CollisionShape2D" parent="Click" unique_id=1514729101]
+shape = SubResource("CapsuleShape2D_gvitu")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
