@@ -1,6 +1,6 @@
 extends Node
 
-#NOTE: Add scoring system
+var mask_inventory = 3
 
 func _ready() -> void:
 	pass # Replace with function body.

@@ -20,6 +20,7 @@ config/icon="res://icon.svg"
 
 DebugMenu="*uid://cggqb75a8w8r"
 DebugManager="*uid://wva11bnjj2ko"
+GlobalData="*uid://dyqxfewb66f2"
 
 [display]
 
