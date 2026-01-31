@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cjafkdt4obng8"]
+
+[ext_resource type="Script" uid="uid://wcoegh8evyjt" path="res://characters/maestro.gd" id="1_0ywb1"]
+
+[node name="Maestro" type="AnimatedSprite2D" unique_id=844771032]
+script = ExtResource("1_0ywb1")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=298964556]
