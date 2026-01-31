@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://wva11bnjj2ko"]
 
-[ext_resource type="Script" uid="uid://btaup5qjnuxwb" path="res://debug/debug_manager.gd" id="1_dyrb0"]
+[ext_resource type="Script" uid="uid://btaup5qjnuxwb" path="res://scripts/debug_manager.gd" id="1_dyrb0"]
 
 [node name="Debug Manager" type="Node" unique_id=749070343]
 script = ExtResource("1_dyrb0")

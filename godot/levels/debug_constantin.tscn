@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ci7j1dn13dce6"]
+
+[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="1_3yaoo"]
+
+[node name="DebugSceneConstantin" type="Node2D" unique_id=1103358769]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=830331681]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1523294789]
+texture = ExtResource("1_3yaoo")
