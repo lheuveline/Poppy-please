@@ -4,13 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cjafkdt4obng8" path="res://characters/maestro.tscn" id="2_bt44k"]
 [ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bc4seuffuekr4" path="res://player_monocle/player.tscn" id="4_kx6l7"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://levels/pause_menu/pause_menu.tscn" id="6_btoec"]
 [ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character1.tscn" id="6_gwceb"]
-=======
-[ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character.tscn" id="5_n46q3"]
-[ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://ui_hud/pause_menu.tscn" id="6_btoec"]
->>>>>>> f6c549eda11860786de631a256c631ee48c1ed0f
 
 [node name="Level_1" type="Node2D" unique_id=55783393]
 script = ExtResource("1_jirdo")
@@ -25,13 +20,8 @@ texture = ExtResource("3_bt44k")
 [node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
 position = Vector2(2, 378)
 
-<<<<<<< HEAD
 [node name="Character1" parent="." unique_id=2040593931 instance=ExtResource("6_gwceb")]
 position = Vector2(455.99997, 0)
 script = null
-=======
-[node name="Character1" parent="." unique_id=2040593931 instance=ExtResource("5_n46q3")]
-position = Vector2(447.99997, 1.9073486e-06)
->>>>>>> f6c549eda11860786de631a256c631ee48c1ed0f
 
 [node name="PauseMenu" parent="." unique_id=247568910 instance=ExtResource("6_btoec")]
