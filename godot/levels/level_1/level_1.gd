@@ -4,7 +4,7 @@ func _ready() -> void:
 	GlobalData.mask_inventory = 3
 
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):
 		print("[level_1] Mask button pressed")
 

@@ -30,6 +30,6 @@ func _on_restart_pressed():
 	resume()
 	get_tree().reload_current_scene()
 
-func _process(delta):
+func _process(_delta):
 	testEsc()
 	

@@ -10,7 +10,7 @@ signal mask_lost()
 func _ready() -> void:
 	pass
 
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):
 		print("[control_mask: I threw the mask!]")
 		if character.clickable:
