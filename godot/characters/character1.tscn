@@ -28,11 +28,11 @@ radius = 134.99998
 height = 269.99997
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gvitu"]
-radius = 44.999996
-height = 109.99999
+radius = 60.0
+height = 133.33333
 
 [node name="Character1" type="AnimatedSprite2D" unique_id=2040593931 groups=["characters"]]
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_78yxt")
 autoplay = "default"
 script = ExtResource("1_rh6c5")
