@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://uf1uwkewvgtf" path="res://icon.svg" id="1_m6l6w"]
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character1.gd" id="1_rh6c5"]
+[ext_resource type="AudioStream" uid="uid://b4hpk7tg3d4r8" path="res://levels/placeholders/170091__klankbeeld__music-box-loop-17.wav" id="3_78yxt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_78yxt"]
 animations = [{
@@ -31,11 +32,64 @@ height = 269.99997
 radius = 60.0
 height = 133.33333
 
-[node name="Character1" type="AnimatedSprite2D" unique_id=2040593931 groups=["characters"]]
+[sub_resource type="Animation" id="Animation_78yxt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_gvitu"]
+resource_name = "fade_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3016154),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [10.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_oqjd8"]
+resource_name = "fade_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AudioStreamPlayer2D:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.30270034),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 10.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gvitu"]
+_data = {
+&"RESET": SubResource("Animation_78yxt"),
+&"fade_down": SubResource("Animation_gvitu"),
+&"fade_up": SubResource("Animation_oqjd8")
+}
+
+[node name="Character1" type="AnimatedSprite2D" unique_id=2040593931 node_paths=PackedStringArray("music_anim") groups=["characters"]]
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_78yxt")
 autoplay = "default"
 script = ExtResource("1_rh6c5")
+music_anim = NodePath("AnimationPlayer")
 
 [node name="Range" type="Area2D" parent="." unique_id=899758991]
 
@@ -47,4 +101,12 @@ shape = SubResource("CapsuleShape2D_oqjd8")
 [node name="CollisionClick" type="CollisionShape2D" parent="Click" unique_id=1514729101]
 shape = SubResource("CapsuleShape2D_gvitu")
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=952693435]
+stream = ExtResource("3_78yxt")
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1239405159]
+libraries/ = SubResource("AnimationLibrary_gvitu")
+
 [connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]
