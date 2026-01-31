@@ -5,7 +5,7 @@ extends Node2D
 @export var character: AnimatedSprite2D
 
 func _ready() -> void:
-	print("[control_mask is ready]")
+	pass
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):

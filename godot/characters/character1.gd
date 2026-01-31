@@ -13,9 +13,8 @@ func _process(delta: float) -> void:
 func _on_range_body_entered(body: CharacterBody2D) -> void:
 	if body.is_in_group("monocle"):
 		clickable = true
-		print("[Character1] You ENTERED my volume up range!")
+		print("[Character1] You can throw a mask at me!")
 
 func _on_range_body_exited(body: Node2D) -> void:
 	if body.is_in_group("monocle"):
 		clickable = false
-		print("[Character1] You EXITED my volume up range.")

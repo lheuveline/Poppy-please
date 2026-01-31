@@ -30,10 +30,6 @@ animations = [{
 radius = 134.99998
 height = 269.99997
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gvitu"]
-radius = 60.0
-height = 133.33333
-
 [sub_resource type="Animation" id="Animation_78yxt"]
 length = 0.001
 tracks/0/type = "value"
@@ -97,11 +93,6 @@ music_anim = NodePath("AnimationPlayer")
 
 [node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=423472906]
 shape = SubResource("CapsuleShape2D_oqjd8")
-
-[node name="Click" type="Area2D" parent="." unique_id=1879170668]
-
-[node name="CollisionClick" type="CollisionShape2D" parent="Click" unique_id=1514729101]
-shape = SubResource("CapsuleShape2D_gvitu")
 
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="." unique_id=952693435]
 stream = ExtResource("3_gvitu")

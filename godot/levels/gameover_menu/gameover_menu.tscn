@@ -1,3 +1,16 @@
 [gd_scene format=3 uid="uid://benyaup78kf6"]
 
 [node name="GameoverMenu" type="CanvasLayer" unique_id=238120819]
+
+[node name="Label" type="Label" parent="." unique_id=2046350583]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -97.0
+offset_top = 470.0
+offset_right = 123.0
+offset_bottom = 519.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "YOU KILLED THE MAESTRO'S
+MENTAL STATE: GAME OVER."
