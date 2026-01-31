@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b6cwrew5yl8rc"]
 
 [ext_resource type="Texture2D" uid="uid://uf1uwkewvgtf" path="res://icon.svg" id="1_m6l6w"]
-[ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character1.gd" id="1_rh6c5"]
+[ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="1_rh6c5"]
 [ext_resource type="AudioStream" uid="uid://bt26hxn5xxygx" path="res://audio/GGJ-2026-lead-true.wav" id="3_gvitu"]
 [ext_resource type="AudioStream" uid="uid://chy7ep71npbkf" path="res://audio/GGJ-2026-lead-false.wav" id="4_1elps"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="5_44k5u"]
