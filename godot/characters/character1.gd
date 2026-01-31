@@ -2,10 +2,10 @@ extends AnimatedSprite2D
 
 @export var music_anim: AnimationPlayer
 var clickable = false
+var masked = false
 
 func _ready() -> void:
 	pass # Replace with function body.
-
 
 func _process(delta: float) -> void:
 	pass

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dmq68lk28uxuu"]
 
 [ext_resource type="Script" uid="uid://db5gw7cjhraba" path="res://ui_hud/hud.gd" id="1_6ca3a"]
+[ext_resource type="Texture2D" uid="uid://b7v8awvu1djrq" path="res://ui_hud/mask.png" id="2_bsdyk"]
 
 [node name="Hud" type="CanvasLayer" unique_id=2079940244]
 script = ExtResource("1_6ca3a")
@@ -13,3 +14,28 @@ offset_bottom = 157.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 37
 text = "Time Left: "
+
+[node name="Masks" type="VBoxContainer" parent="." unique_id=577845670]
+anchors_preset = -1
+anchor_right = 0.22800002
+anchor_bottom = 0.92
+offset_top = 135.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Mask1" type="TextureRect" parent="Masks" unique_id=937781283]
+layout_mode = 2
+texture = ExtResource("2_bsdyk")
+stretch_mode = 3
+
+[node name="Mask2" type="TextureRect" parent="Masks" unique_id=465176499]
+layout_mode = 2
+texture = ExtResource("2_bsdyk")
+stretch_mode = 3
+
+[node name="Mask3" type="TextureRect" parent="Masks" unique_id=563663833]
+layout_mode = 2
+texture = ExtResource("2_bsdyk")
+stretch_mode = 3

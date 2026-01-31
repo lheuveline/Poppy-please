@@ -1,6 +1,6 @@
 extends CanvasLayer
 @onready var lvtimer = $"../LevelTimer"
-
+@export var mask_list: VBoxContainer
 #NOTE: 
 #Add maestro's satisfaction gauge
 #Link to score system (global variable?)
