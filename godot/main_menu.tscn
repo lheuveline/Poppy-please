@@ -34,15 +34,15 @@ script = ExtResource("1_jix8l")
 
 [node name="Panel" type="Panel" parent="." unique_id=459626700]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -2014.0
-offset_top = -1347.0
-offset_right = 2104.0
-offset_bottom = 796.0
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1054.0
+offset_top = -807.0
+offset_right = 1144.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1933118268]
@@ -79,11 +79,16 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Credits"
 
 [node name="Label" type="Label" parent="." unique_id=1987486009]
-layout_mode = 0
-offset_left = 274.0
-offset_top = 124.0
-offset_right = 1688.0
-offset_bottom = 353.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.51100004
+anchor_top = 0.22100002
+anchor_right = 0.51100004
+anchor_bottom = 0.22100002
+offset_left = -707.12006
+offset_top = -114.68002
+offset_right = 706.87994
+offset_bottom = 114.31998
 theme_override_colors/font_color = Color(0.77774054, 0.86681354, 0.8884972, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.92941177)
 theme_override_constants/shadow_offset_x = 13
