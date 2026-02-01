@@ -1,8 +1,8 @@
 extends AnimatedSprite2D
 
 @export var music_anim: AnimationPlayer
+@export var masked = false
 var clickable = false
-var masked = false
 
 func _ready() -> void:
 	pass # Replace with function body.

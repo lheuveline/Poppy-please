@@ -5,8 +5,7 @@ func _ready() -> void:
 
 
 func _process(_delta: float) -> void:
-	if Input.is_action_just_pressed("throw_mask"):
-		print("[level_1] Mask button pressed")
+	pass
 
 
 func _on_level_timer_timeout() -> void:
