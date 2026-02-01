@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
 [ext_resource type="PackedScene" uid="uid://c3quf2ct0v1vm" path="res://characters/popotam/popotam.tscn" id="9_8jbay"]
+[ext_resource type="PackedScene" uid="uid://cjmvcdynym411" path="res://characters/otter/otter.tscn" id="10_la5aw"]
 
 [node name="Level_1" type="Node2D" unique_id=55783393]
 script = ExtResource("1_jirdo")
@@ -50,6 +51,9 @@ position = Vector2(480, 0)
 
 [node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
 position = Vector2(419, 76)
+
+[node name="Otter" parent="." unique_id=1996141275 instance=ExtResource("10_la5aw")]
+position = Vector2(-403, 252)
 
 [connection signal="timeout" from="LevelTimer" to="." method="_on_level_timer_timeout"]
 
