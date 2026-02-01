@@ -38,6 +38,12 @@ stream = ExtResource("3_be74f")
 [node name="MaskPull" type="AudioStreamPlayer2D" parent="." unique_id=1863549633]
 stream = ExtResource("3_be74f")
 
+[node name="MaskFx" type="CPUParticles2D" parent="." unique_id=98952053]
+lifetime = 5.0
+emission_shape = 6
+emission_ring_inner_radius = 0.8
+emission_ring_radius = 1.0
+
 [node name="Range" type="Area2D" parent="." unique_id=1403962186]
 
 [node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=941879749]
