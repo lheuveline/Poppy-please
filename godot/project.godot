@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Poppy Please"
 config/description="Global Game Jam 2026"
-run/main_scene="uid://beb7rd2gven0n"
+run/main_scene="uid://cjwm6dw4kjm7k"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

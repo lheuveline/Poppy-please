@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://cjwm6dw4kjm7k"]
 
 [ext_resource type="FontFile" uid="uid://3a6yvj5wow85" path="res://themes/quicksand_bold.otf" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://btm6oxk0wlctq" path="res://levels/start_menu/IMG_20250623_161010.jpg" id="1_7vrkn"]
 [ext_resource type="Script" uid="uid://ce072oxj8owl" path="res://levels/start_menu/main_menu.gd" id="1_jix8l"]
+[ext_resource type="Texture2D" uid="uid://b8ghaodjgclct" path="res://backgrounds/background_welcome.png" id="2_78d18"]
 [ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="3_fu7sn"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fu7sn"]
-texture = ExtResource("1_7vrkn")
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgsm7"]
+texture = ExtResource("2_78d18")
 
 [sub_resource type="FontVariation" id="FontVariation_glbon"]
 base_font = ExtResource("3_fu7sn")
@@ -21,9 +21,6 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
-[sub_resource type="FontVariation" id="FontVariation_jix8l"]
-base_font = ExtResource("3_fu7sn")
-
 [node name="MainMenu" type="Control" unique_id=1699762443]
 layout_mode = 3
 anchors_preset = 15
@@ -31,29 +28,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.0
 script = ExtResource("1_jix8l")
 
-[node name="Panel" type="Panel" parent="." unique_id=459626700]
+[node name="Background" type="Panel" parent="." unique_id=459626700]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1054.0
-offset_top = -807.0
-offset_right = 1144.0
-offset_bottom = 256.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_fu7sn")
+theme_override_styles/panel = SubResource("StyleBoxTexture_jgsm7")
 
-[node name="Label" type="Label" parent="Panel" unique_id=65945116]
-layout_mode = 0
-offset_left = 1194.0
-offset_top = 881.0
-offset_right = 2875.0
-offset_bottom = 1085.0
+[node name="Title" type="Label" parent="." unique_id=65945116]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -836.0
+offset_top = 33.0
+offset_right = 837.0
+offset_bottom = 237.0
+grow_horizontal = 2
 theme_override_colors/font_color = Color(0.22745098, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_constants/outline_size = 49
@@ -65,18 +58,19 @@ vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1933118268]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.492
-anchor_top = 0.605
-anchor_right = 0.492
-anchor_bottom = 0.605
-offset_left = -461.64
-offset_top = -236.40002
-offset_right = 462.36
-offset_bottom = 236.09998
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -285.0
+offset_top = -261.0
+offset_right = 285.0
+offset_bottom = 16.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
+metadata/_edit_group_ = true
 
 [node name="Start" type="Button" parent="VBoxContainer" unique_id=1317193441]
 layout_mode = 2
@@ -95,24 +89,6 @@ theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 92
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Credits"
-
-[node name="Label" type="Label" parent="." unique_id=1987486009]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.51100004
-anchor_top = 0.22100002
-anchor_right = 0.51100004
-anchor_bottom = 0.22100002
-offset_left = -1228.1201
-offset_top = -792.68005
-offset_right = 185.87994
-offset_bottom = -563.68005
-theme_override_colors/font_color = Color(0.77774054, 0.86681354, 0.8884972, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.92941177)
-theme_override_constants/shadow_offset_x = 13
-theme_override_fonts/font = SubResource("FontVariation_jix8l")
-theme_override_font_sizes/font_size = 138
-text = "Mask that cacaphonia !"
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]

@@ -8,8 +8,8 @@
 [ext_resource type="AudioStream" uid="uid://bk717sscnula6" path="res://audio/GGJ-2026-clickable-false.wav" id="6_y5x5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h6hl0"]
-radius = 298.0
-height = 640.0
+radius = 128.0
+height = 256.0
 
 [node name="Character" type="Node2D" unique_id=8466617 node_paths=PackedStringArray("clickable_true_sound", "clickable_false_sound") groups=["characters"]]
 script = ExtResource("1_rh6c5")
@@ -48,6 +48,12 @@ stream = ExtResource("5_20pwa")
 
 [node name="NotClickableSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1976612673]
 stream = ExtResource("6_y5x5e")
+
+[node name="MaskFx" type="CPUParticles2D" parent="." unique_id=98952053]
+lifetime = 5.0
+emission_shape = 6
+emission_ring_inner_radius = 0.8
+emission_ring_radius = 1.0
 
 [node name="Range" type="Area2D" parent="." unique_id=1403962186]
 
