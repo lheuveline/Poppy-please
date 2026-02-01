@@ -17,13 +17,13 @@ func _process(_delta: float) -> void:
 	pass
 
 func on_mask_pushed():
-	if mask_inventory in range (1,5):
+	if mask_inventory > 1:
 		mask_inventory -= 1
 		print("[global_date] Masks left: ", mask_inventory)
 		hud.remove_mask()
-	if mask_inventory == 1:
+	elif mask_inventory == 1:
 		get_tree().change_scene_to_file("res://levels/gameover_menu/gameover_menu.tscn")
-	else: 
+	elif mask_inventory > 5:
 		print("[GlobalData] Mask pushed but without effect.")
 		return
 

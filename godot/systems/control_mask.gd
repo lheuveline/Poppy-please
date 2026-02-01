@@ -9,7 +9,6 @@ func _ready() -> void:
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):
-		print("[control_mask: I threw the mask!]")
 		if character.clickable:
 			if not character.masked: 
 				print("[control_mask] Tracks switched, mask pushed signal emitted")
