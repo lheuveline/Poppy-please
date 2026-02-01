@@ -58,17 +58,14 @@ vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1933118268]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -285.0
-offset_top = -261.0
-offset_right = 285.0
-offset_bottom = 16.0
+offset_left = -304.5487
+offset_top = 287.0
+offset_right = 304.5487
+offset_bottom = 543.0
 grow_horizontal = 2
-grow_vertical = 2
 theme_override_constants/separation = 50
 metadata/_edit_group_ = true
 
