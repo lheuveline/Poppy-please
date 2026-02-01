@@ -2,7 +2,7 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://b4hpk7tg3d4r8"
+uid="uid://dj8py3ph3qqwl"
 path="res://.godot/imported/170091__klankbeeld__music-box-loop-17.wav-20b6344ebf8d5e73cd7a4899719d43e0.sample"
 
 [deps]
@@ -18,7 +18,7 @@ force/max_rate=false
 force/max_rate_hz=44100
 edit/trim=false
 edit/normalize=false
-edit/loop_mode=2
+edit/loop_mode=0
 edit/loop_begin=0
 edit/loop_end=-1
 compress/mode=2

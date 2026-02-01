@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character_1/character1.tscn" id="6_gwceb"]
 [ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
+[ext_resource type="PackedScene" uid="uid://c3quf2ct0v1vm" path="res://characters/popotam/popotam.tscn" id="9_8jbay"]
+[ext_resource type="PackedScene" uid="uid://cjmvcdynym411" path="res://characters/otter/otter.tscn" id="10_la5aw"]
 
 [node name="Level_1" type="Node2D" unique_id=55783393]
 script = ExtResource("1_jirdo")
@@ -18,9 +20,6 @@ script = ExtResource("1_jirdo")
 texture = ExtResource("3_bt44k")
 
 [node name="Maestro" parent="." unique_id=844771032 instance=ExtResource("2_bt44k")]
-
-[node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
-position = Vector2(2, 378)
 
 [node name="PauseMenu" parent="." unique_id=247568910 instance=ExtResource("6_btoec")]
 anchors_preset = 8
@@ -46,6 +45,15 @@ position = Vector2(-516, -300)
 
 [node name="Character1" parent="Musiciens" unique_id=2040593931 instance=ExtResource("6_gwceb")]
 position = Vector2(480, 0)
+
+[node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
+position = Vector2(419, 76)
+
+[node name="Otter" parent="." unique_id=1996141275 instance=ExtResource("10_la5aw")]
+position = Vector2(-403, 252)
+
+[node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
+position = Vector2(2, 378)
 
 [connection signal="timeout" from="LevelTimer" to="." method="_on_level_timer_timeout"]
 
