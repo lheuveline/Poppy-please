@@ -1,15 +1,20 @@
 [gd_scene format=3 uid="uid://b6cwrew5yl8rc"]
 
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="1_rh6c5"]
+[ext_resource type="AudioStream" uid="uid://bg5dpjsgdqxnd" path="res://audio/KSHMR_Vocal_Shout_33_Whoo_C#.wav" id="3_66nm0"]
 [ext_resource type="AudioStream" uid="uid://vjpc5lsxlwmk" path="res://audio/195937__michimuc2__short-wind-noise-soft.wav" id="3_be74f"]
+[ext_resource type="AudioStream" uid="uid://bv0w5i2bm3v85" path="res://audio/GGJ-2026-clickable-true.wav" id="5_20pwa"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="5_44k5u"]
+[ext_resource type="AudioStream" uid="uid://bk717sscnula6" path="res://audio/GGJ-2026-clickable-false.wav" id="6_y5x5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h6hl0"]
 radius = 298.0
 height = 640.0
 
-[node name="Character" type="Node2D" unique_id=8466617 groups=["characters"]]
+[node name="Character" type="Node2D" unique_id=8466617 node_paths=PackedStringArray("clickable_true_sound", "clickable_false_sound") groups=["characters"]]
 script = ExtResource("1_rh6c5")
+clickable_true_sound = NodePath("ClickableSoundPlayer")
+clickable_false_sound = NodePath("NotClickableSoundPlayer")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=177601966]
 animation = &""
@@ -33,10 +38,16 @@ mask_pulled_sound = NodePath("../MaskPull")
 character = NodePath("..")
 
 [node name="MaskPush" type="AudioStreamPlayer2D" parent="." unique_id=153447394]
-stream = ExtResource("3_be74f")
+stream = ExtResource("3_66nm0")
 
 [node name="MaskPull" type="AudioStreamPlayer2D" parent="." unique_id=1863549633]
 stream = ExtResource("3_be74f")
+
+[node name="ClickableSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1106686506]
+stream = ExtResource("5_20pwa")
+
+[node name="NotClickableSoundPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1976612673]
+stream = ExtResource("6_y5x5e")
 
 [node name="MaskFx" type="CPUParticles2D" parent="." unique_id=98952053]
 lifetime = 5.0
