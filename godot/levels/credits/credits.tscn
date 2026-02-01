@@ -137,7 +137,7 @@ theme_override_constants/shadow_offset_y = -7
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 55
-text = "Aurore"
+text = "AuroreCello"
 horizontal_alignment = 1
 vertical_alignment = 1
 
