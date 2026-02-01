@@ -30,6 +30,7 @@ animation = &"idle"
 
 [node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("4_6gvvw")
+volume_db = 2.0
 
 [node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
 stream = ExtResource("5_tqjao")
