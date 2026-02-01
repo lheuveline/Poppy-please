@@ -295,13 +295,13 @@ vertical_alignment = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.822
-anchor_top = 0.68600005
+anchor_top = 0.72900003
 anchor_right = 0.822
-anchor_bottom = 0.68600005
+anchor_bottom = 0.72900003
 offset_left = -276.24
-offset_top = -32.880066
+offset_top = -33.320007
 offset_right = 277.76
-offset_bottom = 33.119934
+offset_bottom = 32.679993
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0.92156863, 0.95686275, 0.90588236, 1)
 theme_override_constants/shadow_offset_y = -7
@@ -339,10 +339,15 @@ anchor_left = 0.88900006
 anchor_top = 0.84200007
 anchor_right = 0.88900006
 anchor_bottom = 0.84200007
-offset_left = -1280.8801
-offset_top = -525.36005
-offset_right = -1240.8801
-offset_bottom = -485.36005
+offset_left = -14.880127
+offset_top = -26.360046
+offset_right = 25.119873
+offset_bottom = 13.639954
+
+[node name="Onara2" type="Sprite2D" parent="Onara" unique_id=994824740]
+position = Vector2(12, -25)
+scale = Vector2(0.34504414, 0.34504414)
+texture = ExtResource("5_xit1c")
 
 [node name="return" type="Button" parent="." unique_id=868037989]
 layout_mode = 1
@@ -361,10 +366,5 @@ theme_override_font_sizes/font_size = 70
 theme_override_styles/normal = SubResource("StyleBoxFlat_n2fpc")
 text = "Return"
 icon_alignment = 1
-
-[node name="Onara2" type="Sprite2D" parent="." unique_id=994824740]
-position = Vector2(1828, 775)
-scale = Vector2(0.34504414, 0.34504414)
-texture = ExtResource("5_xit1c")
 
 [connection signal="pressed" from="return" to="." method="_on_return_pressed"]
