@@ -1,7 +1,10 @@
 [gd_scene format=3 uid="uid://m232tc17nk3l"]
 
+[ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character_1/character1.tscn" id="1_d5ic6"]
 [ext_resource type="Texture2D" uid="uid://cqhcd3sq8xvq5" path="res://characters/spider/spider_idle_1.png" id="1_ruxyq"]
 [ext_resource type="Texture2D" uid="uid://dmpvr1ail0mmq" path="res://characters/spider/spider_idle_2.png" id="2_cvkds"]
+[ext_resource type="AudioStream" uid="uid://mllqp0av2usr" path="res://audio/GGJ-2026-guitar-true.wav" id="4_sln25"]
+[ext_resource type="AudioStream" uid="uid://cm2wtfkid3316" path="res://audio/GGJ-2026-guitar-false.wav" id="5_22awb"]
 
 [sub_resource type="GDScript" id="GDScript_ruxyq"]
 script/source = "extends Node2D
@@ -17,7 +20,7 @@ func _process(delta: float) -> void:
 	pass
 "
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_060ym"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ruxyq"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -27,13 +30,27 @@ animations = [{
 "texture": ExtResource("2_cvkds")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"default",
 "speed": 2.0
 }]
 
 [node name="Spider" type="Node2D" unique_id=2046092631]
 script = SubResource("GDScript_ruxyq")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1970990509]
-sprite_frames = SubResource("SpriteFrames_060ym")
-animation = &"idle"
+[node name="Character" parent="." unique_id=8466617 instance=ExtResource("1_d5ic6")]
+
+[node name="Sprite" parent="Character" index="0" unique_id=177601966]
+position = Vector2(20, -30)
+sprite_frames = SubResource("SpriteFrames_ruxyq")
+animation = &"default"
+autoplay = "default"
+frame = 1
+frame_progress = 0.5379561
+
+[node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
+stream = ExtResource("4_sln25")
+
+[node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
+stream = ExtResource("5_22awb")
+
+[editable path="Character"]
