@@ -1,6 +1,5 @@
 extends CanvasLayer
 
-@onready var lvtimer = $"../LevelTimer"
 @export var mask_icons: VBoxContainer
 
 var mask_list: Array[TextureRect] = []
@@ -16,7 +15,7 @@ func _ready() -> void:
 		print("[hud] List of mask icons: ", mask_list)
 
 func _process(_delta: float) -> void:
-	$Timer_Text.set_text(str(int(lvtimer.get_time_left())))
+	pass
 
 func add_mask():
 	for icon in mask_list:

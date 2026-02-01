@@ -11,24 +11,6 @@
 script = ExtResource("1_6ca3a")
 mask_icons = NodePath("Masks")
 
-[node name="Timer_Text" type="RichTextLabel" parent="." unique_id=881352881]
-offset_left = 275.0
-offset_top = 63.0
-offset_right = 608.0
-offset_bottom = 142.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 37
-text = "second"
-
-[node name="Timer_TextFull" type="RichTextLabel" parent="." unique_id=150250218]
-offset_left = 56.0
-offset_top = 65.0
-offset_right = 389.0
-offset_bottom = 144.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 37
-text = "Time Left: "
-
 [node name="Masks" type="VBoxContainer" parent="." unique_id=577845670]
 anchors_preset = -1
 anchor_left = 0.163

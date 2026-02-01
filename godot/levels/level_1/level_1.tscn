@@ -31,11 +31,6 @@ offset_left = -3.0
 offset_top = -57.0
 offset_bottom = -57.0
 
-[node name="LevelTimer" type="Timer" parent="." unique_id=959544153]
-wait_time = 60.0
-one_shot = true
-autostart = true
-
 [node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
 z_index = 1
 position = Vector2(2, 378)
@@ -65,8 +60,6 @@ position = Vector2(-401, -269)
 music_anim = NodePath("AnimationPlayer")
 
 [node name="Hud" parent="." unique_id=2079940244 instance=ExtResource("7_gwceb")]
-
-[connection signal="timeout" from="LevelTimer" to="." method="_on_level_timer_timeout"]
 
 [editable path="Popotam"]
 [editable path="Panda"]
