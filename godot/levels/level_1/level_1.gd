@@ -8,7 +8,13 @@ func _ready() -> void:
 		musician_list.append(node)
 		print("[level_1] List of musician nodes: ", musician_list)
 	var impostor = musician_list.pick_random()
+	print("[level_1] Picked ", impostor.get_parent().name)
 	impostor.get_node("Mask").switch_track()
 	
 func _process(_delta: float) -> void:
-	pass
+	var all_good = true
+	for character in musician_list:
+		all_good = all_good && character.plays_good
+	if all_good:
+		print("Victory, switching to victory scene")
+		get_tree().change_scene_to_file("res://levels/victory_menu/victory_menu.tscn")

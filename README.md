@@ -22,3 +22,4 @@ Credit to of all tools and library used by the game.
 - Louis (sound)
 - [Geekymoose](https://github.com/geekymoose) (art)
 - [wsmind](https://github.com/wsmind)
+- [AuroreCello](https://github.com/AuroreCello)
