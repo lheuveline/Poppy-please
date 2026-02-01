@@ -32,3 +32,7 @@ sprite_frames = SubResource("SpriteFrames_rkbax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1381575702]
 shape = SubResource("CircleShape2D_g1dw6")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=1251146660]
+scale = Vector2(0.01, 0.01)
+current = true

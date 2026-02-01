@@ -2,6 +2,9 @@ extends CharacterBody2D
 
 @export var speed = 300
 
+func _ready() -> void:
+	$AudioListener2D.make_current()
+
 func _physics_process(_delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
