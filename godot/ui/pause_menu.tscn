@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8k8iuvvhixmp" path="res://ui/pause_menu.gd" id="1_05uyy"]
 [ext_resource type="Texture2D" uid="uid://cpb53apopdg5n" path="res://ui/jouer.1.png" id="1_nwcfo"]
-[ext_resource type="Texture2D" uid="uid://flme2od6bunq" path="res://ui/boucle-sans-fin (1).png" id="2_05uyy"]
+[ext_resource type="Texture2D" uid="uid://flme2od6bunq" path="res://ui/boucle-sans-fin.png" id="2_05uyy"]
 
 [sub_resource type="Animation" id="Animation_p81d2"]
 length = 0.001

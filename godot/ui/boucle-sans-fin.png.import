@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://flme2od6bunq"
-path="res://.godot/imported/boucle-sans-fin (1).png-8fe7561002eb1ecf23ea11e8d4f15700.ctex"
+path="res://.godot/imported/boucle-sans-fin.png-75f1cab689f30e8ee857c5f1ba6c1ee9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/boucle-sans-fin (1).png"
-dest_files=["res://.godot/imported/boucle-sans-fin (1).png-8fe7561002eb1ecf23ea11e8d4f15700.ctex"]
+source_file="res://ui/boucle-sans-fin.png"
+dest_files=["res://.godot/imported/boucle-sans-fin.png-75f1cab689f30e8ee857c5f1ba6c1ee9.ctex"]
 
 [params]
 

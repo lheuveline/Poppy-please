@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cynsf6h0lboxh"
-path="res://.godot/imported/Melt-Swashes.ttf-9f28a02749f5d6ca2ccd9e67d08692d0.fontdata"
+uid="uid://ffrf4cilbsqv"
+path="res://.godot/imported/roboto_regular.ttf-dd939070fef961d374af45ce87c56a54.fontdata"
 
 [deps]
 
-source_file="res://themes/Melt-Swashes.ttf"
-dest_files=["res://.godot/imported/Melt-Swashes.ttf-9f28a02749f5d6ca2ccd9e67d08692d0.fontdata"]
+source_file="res://themes/roboto_regular.ttf"
+dest_files=["res://.godot/imported/roboto_regular.ttf-dd939070fef961d374af45ce87c56a54.fontdata"]
 
 [params]
 

@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://d3j7trxiq5o07" path="res://levels/credits/credits.gd" id="1_vhhfy"]
 [ext_resource type="Texture2D" uid="uid://bfb0nr8i0x8px" path="res://backgrounds/Credits_background.jpg" id="1_yksct"]
-[ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/Melt-Swashes.ttf" id="2_iipf6"]
-[ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/Roboto-Regular.ttf" id="2_n2fpc"]
+[ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="2_iipf6"]
+[ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/roboto_regular.ttf" id="2_n2fpc"]
 
 [sub_resource type="FontVariation" id="FontVariation_n2fpc"]
 base_font = ExtResource("2_iipf6")

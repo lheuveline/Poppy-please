@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://3a6yvj5wow85"
-path="res://.godot/imported/Quicksand_Bold.otf-9ee041002b2fb98087a7151c39fb5102.fontdata"
+path="res://.godot/imported/quicksand_bold.otf-9e326e9cf455be26779b4383221c581c.fontdata"
 
 [deps]
 
-source_file="res://themes/Quicksand_Bold.otf"
-dest_files=["res://.godot/imported/Quicksand_Bold.otf-9ee041002b2fb98087a7151c39fb5102.fontdata"]
+source_file="res://themes/quicksand_bold.otf"
+dest_files=["res://.godot/imported/quicksand_bold.otf-9e326e9cf455be26779b4383221c581c.fontdata"]
 
 [params]
 
