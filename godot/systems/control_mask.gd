@@ -2,7 +2,7 @@ extends Node2D
 
 @export var good_track: AudioStreamPlayer2D
 @export var bad_track: AudioStreamPlayer2D
-@export var character: AnimatedSprite2D
+@export var character: Node2D
 
 func _ready() -> void:
 	pass

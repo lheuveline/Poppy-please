@@ -22,15 +22,17 @@ animations = [{
 
 [node name="Worm" type="Node2D" unique_id=615808439]
 
-[node name="Character" parent="." unique_id=177601966 instance=ExtResource("1_f4kbm")]
+[node name="Character" parent="." unique_id=8466617 instance=ExtResource("1_f4kbm")]
+
+[node name="Sprite" parent="Character" index="0" unique_id=177601966]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_vbe11")
 animation = &"idle"
 
-[node name="GoodTrack" parent="Character" index="0" unique_id=41276720]
+[node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("4_lgxcy")
 
-[node name="BadTrack" parent="Character" index="1" unique_id=1770106595]
+[node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
 stream = ExtResource("5_spafc")
 
 [editable path="Character"]

@@ -1,4 +1,4 @@
-extends AnimatedSprite2D
+extends Node2D
 
 @export var music_anim: AnimationPlayer
 @export var masked = false

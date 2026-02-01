@@ -22,14 +22,16 @@ animations = [{
 
 [node name="Popotam" type="Node2D" unique_id=1010880442]
 
-[node name="Character" parent="." unique_id=177601966 instance=ExtResource("1_q2vjn")]
+[node name="Character" parent="." unique_id=8466617 instance=ExtResource("1_q2vjn")]
+
+[node name="Sprite" parent="Character" index="0" unique_id=177601966]
 sprite_frames = SubResource("SpriteFrames_xvaeb")
 animation = &"idle"
 
-[node name="GoodTrack" parent="Character" index="0" unique_id=41276720]
+[node name="GoodTrack" parent="Character" index="10" unique_id=41276720]
 stream = ExtResource("5_7mqf8")
 
-[node name="BadTrack" parent="Character" index="1" unique_id=1770106595]
+[node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
 stream = ExtResource("6_1fsm5")
 
 [editable path="Character"]

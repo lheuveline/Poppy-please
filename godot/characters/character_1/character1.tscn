@@ -7,10 +7,12 @@
 radius = 298.0
 height = 640.0
 
-[node name="Character" type="AnimatedSprite2D" unique_id=177601966]
+[node name="Character" type="Node2D" unique_id=8466617]
+script = ExtResource("1_rh6c5")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=177601966]
 animation = &""
 autoplay = "idle"
-script = ExtResource("1_rh6c5")
 
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="." unique_id=41276720]
 autoplay = true

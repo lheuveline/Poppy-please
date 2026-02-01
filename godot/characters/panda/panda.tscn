@@ -22,14 +22,16 @@ animations = [{
 
 [node name="Panda" type="Node2D" unique_id=1965515281]
 
-[node name="Character" parent="." unique_id=177601966 instance=ExtResource("1_xyax4")]
+[node name="Character" parent="." unique_id=8466617 instance=ExtResource("1_xyax4")]
+
+[node name="Sprite" parent="Character" index="0" unique_id=177601966]
 sprite_frames = SubResource("SpriteFrames_fvda5")
 animation = &"idle"
 
-[node name="GoodTrack" parent="Character" index="0" unique_id=41276720]
+[node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("4_6gvvw")
 
-[node name="BadTrack" parent="Character" index="1" unique_id=1770106595]
+[node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
 stream = ExtResource("5_tqjao")
 
 [editable path="Character"]
