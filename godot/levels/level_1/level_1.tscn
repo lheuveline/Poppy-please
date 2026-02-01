@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bj2oof3xqahma" path="res://levels/level_1/level_1.gd" id="1_jirdo"]
 [ext_resource type="PackedScene" uid="uid://cjafkdt4obng8" path="res://characters/maestro/maestro.tscn" id="2_bt44k"]
-[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="3_bt44k"]
+[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/background_game.png" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bc4seuffuekr4" path="res://player/player.tscn" id="4_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://ui/pause_menu.tscn" id="6_btoec"]
 [ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
