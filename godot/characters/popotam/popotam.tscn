@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c3quf2ct0v1vm"]
+
+[ext_resource type="Texture2D" uid="uid://lf25f8w7uxdk" path="res://characters/popotam/popotam_idlde_1.png" id="1_3jmrb"]
+[ext_resource type="Script" uid="uid://cpxkn7ii24oac" path="res://characters/popotam/popotam.gd" id="1_55h8c"]
+[ext_resource type="Texture2D" uid="uid://cykcs43w12y1u" path="res://characters/popotam/popotam_idlde_2.png" id="2_55h8c"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xvaeb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3jmrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_55h8c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Popotam" type="Node2D" unique_id=1010880442]
+script = ExtResource("1_55h8c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944759271]
+sprite_frames = SubResource("SpriteFrames_xvaeb")
+animation = &"idle"
+frame = 1
+frame_progress = 0.8493154
