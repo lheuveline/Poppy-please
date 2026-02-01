@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://lf25f8w7uxdk" path="res://characters/popotam/popotam_idlde_1.png" id="1_3jmrb"]
 [ext_resource type="Texture2D" uid="uid://cykcs43w12y1u" path="res://characters/popotam/popotam_idlde_2.png" id="2_55h8c"]
-[ext_resource type="Script" uid="uid://cgamdmoxnmdoe" path="res://characters/popotam/animated_sprite_2d.gd" id="4_1fsm5"]
+[ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="3_7mqf8"]
 [ext_resource type="AudioStream" uid="uid://7k8yjo0kpms1" path="res://audio/GGJ-2026-clar-true.wav" id="5_7mqf8"]
 [ext_resource type="AudioStream" uid="uid://n3k14c1klifc" path="res://audio/GGJ-2026-clar-false.wav" id="6_1fsm5"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="6_7mqf8"]
@@ -84,7 +84,7 @@ sprite_frames = SubResource("SpriteFrames_xvaeb")
 animation = &"idle"
 frame = 1
 frame_progress = 0.8493154
-script = ExtResource("4_1fsm5")
+script = ExtResource("3_7mqf8")
 
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1733841575]
 stream = ExtResource("5_7mqf8")
@@ -99,16 +99,16 @@ autoplay = true
 root_node = NodePath("../..")
 libraries/ = SubResource("AnimationLibrary_4aihu")
 
+[node name="Mask" type="Node2D" parent="." unique_id=564014706 node_paths=PackedStringArray("good_track", "bad_track", "character")]
+script = ExtResource("6_7mqf8")
+good_track = NodePath("../AnimatedSprite2D/GoodTrack")
+bad_track = NodePath("../AnimatedSprite2D/BadTrack")
+character = NodePath("../AnimatedSprite2D")
+
 [node name="Range" type="Area2D" parent="." unique_id=364070392]
 
 [node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=1771978811]
 shape = SubResource("CapsuleShape2D_t8lxs")
 
-[node name="Mask" type="Node2D" parent="." unique_id=564014706 node_paths=PackedStringArray("good_track", "bad_track", "character", "music_anim")]
-script = ExtResource("6_7mqf8")
-good_track = NodePath("../AnimatedSprite2D/GoodTrack")
-bad_track = NodePath("../AnimatedSprite2D/BadTrack")
-character = NodePath("../AnimatedSprite2D")
-music_anim = NodePath("../AnimatedSprite2D/AnimationPlayer")
-
 [connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
+[connection signal="body_entered" from="Range" to="AnimatedSprite2D" method="_on_range_body_entered"]

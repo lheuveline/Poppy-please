@@ -10,7 +10,8 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	pass
 
-func _on_range_body_entered(body: CharacterBody2D) -> void:
+func _on_range_body_entered(body: Node2D) -> void:
+	print("[Character] Body entered")
 	if body.is_in_group("monocle"):
 		clickable = true
 		print("[Character1] You can throw a mask at me!")
