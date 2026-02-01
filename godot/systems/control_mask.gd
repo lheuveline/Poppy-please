@@ -25,6 +25,3 @@ func switch_track():
 		var temp = good_track.volume_linear
 		good_track.volume_linear = bad_track.volume_linear
 		bad_track.volume_linear = temp
-		if bad_track.volume_linear == 0:
-			print("[control_mask] You won!")
-			#NOTE: not tested
