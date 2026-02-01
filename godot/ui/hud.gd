@@ -12,7 +12,6 @@ func _ready() -> void:
 	GlobalData.register_hud(self)
 	for child in mask_icons.get_children():
 		mask_list.append(child)
-		print("[hud] List of mask icons: ", mask_list)
 
 func _process(_delta: float) -> void:
 	pass
