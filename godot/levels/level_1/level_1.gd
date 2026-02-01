@@ -8,6 +8,7 @@ func _ready() -> void:
 		musician_list.append(node)
 		print("[level_1] List of musician nodes: ", musician_list)
 	var impostor = musician_list.pick_random()
+	print("[level_1] Picked ", impostor.get_parent().name)
 	impostor.get_node("Mask").switch_track()
 	
 func _process(_delta: float) -> void:
