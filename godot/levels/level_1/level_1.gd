@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	GlobalData.mask_inventory = 3
+	pass
 
 
 func _process(_delta: float) -> void:

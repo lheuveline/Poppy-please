@@ -82,6 +82,7 @@ height = 269.99997
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1466495857]
 sprite_frames = SubResource("SpriteFrames_6jrdx")
 animation = &"idle"
+autoplay = "idle"
 script = ExtResource("3_s6bp6")
 
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1631760145]

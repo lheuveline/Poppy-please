@@ -82,6 +82,7 @@ height = 318.0
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1966518083 groups=["monocle"]]
 sprite_frames = SubResource("SpriteFrames_fvda5")
 animation = &"idle"
+autoplay = "idle"
 frame = 1
 frame_progress = 0.9719332
 script = ExtResource("3_6gvvw")
@@ -113,3 +114,4 @@ shape = SubResource("CapsuleShape2D_6gvvw")
 
 [connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
 [connection signal="body_entered" from="Range" to="AnimatedSprite2D" method="_on_range_body_entered"]
+[connection signal="body_exited" from="Range" to="AnimatedSprite2D" method="_on_range_body_exited"]

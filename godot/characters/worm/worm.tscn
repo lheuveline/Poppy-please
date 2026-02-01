@@ -83,6 +83,7 @@ height = 269.99997
 scale = Vector2(0.55, 0.55)
 sprite_frames = SubResource("SpriteFrames_vbe11")
 animation = &"idle"
+autoplay = "idle"
 frame_progress = 0.015519454
 script = ExtResource("3_lgxcy")
 
