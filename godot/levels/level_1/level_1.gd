@@ -12,4 +12,8 @@ func _ready() -> void:
 	impostor.get_node("Mask").switch_track()
 	
 func _process(_delta: float) -> void:
-	pass
+	var all_good = true
+	for character in musician_list:
+		all_good = all_good && character.plays_good
+	if all_good:
+		print("WIN")
