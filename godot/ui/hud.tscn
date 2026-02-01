@@ -87,19 +87,21 @@ script = ExtResource("1_6ca3a")
 mask_icons = NodePath("Masks")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=946993744]
-offset_left = 26.725006
-offset_top = 153.0
-offset_right = 282.0
-offset_bottom = 1025.0
+offset_left = 11.0
+offset_top = 134.0
+offset_right = 233.0
+offset_bottom = 1031.0
 
 [node name="Masks" type="VBoxContainer" parent="." unique_id=577845670]
 anchors_preset = -1
 anchor_left = 0.163
 anchor_right = 0.163
-offset_left = -272.96
+offset_left = -278.96
 offset_top = 152.0
-offset_right = 497.0399
+offset_right = 491.0399
 offset_bottom = 2990.3335
+grow_horizontal = 2
+grow_vertical = 2
 scale = Vector2(0.3, 0.3)
 size_flags_horizontal = 4
 size_flags_vertical = 4
@@ -107,31 +109,31 @@ theme_override_constants/separation = 10
 alignment = 1
 
 [node name="Mask1" type="AnimatedSprite2D" parent="Masks" unique_id=2107149975]
-position = Vector2(374.24988, 319.99988)
+position = Vector2(274.76, 319.99988)
 sprite_frames = SubResource("SpriteFrames_spcu4")
 autoplay = "default"
 frame_progress = 0.55523485
 
 [node name="Mask2" type="AnimatedSprite2D" parent="Masks" unique_id=719694736]
-position = Vector2(384.25, 896.6665)
+position = Vector2(274.76, 896.6665)
 sprite_frames = SubResource("SpriteFrames_mp5xd")
 autoplay = "default"
 frame_progress = 0.73466593
 
 [node name="Mask3" type="AnimatedSprite2D" parent="Masks" unique_id=1506660638]
-position = Vector2(384.24988, 1413.3335)
+position = Vector2(274.76, 1413.3335)
 sprite_frames = SubResource("SpriteFrames_u6vop")
 autoplay = "default"
 frame_progress = 0.6140533
 
 [node name="Mask4" type="AnimatedSprite2D" parent="Masks" unique_id=256828879]
-position = Vector2(387.58325, 2096.666)
+position = Vector2(274.76, 2096.666)
 sprite_frames = SubResource("SpriteFrames_xtm2r")
 autoplay = "default"
 frame_progress = 0.12140108
 
 [node name="Mask5" type="AnimatedSprite2D" parent="Masks" unique_id=445531436]
-position = Vector2(397.58325, 2593.334)
+position = Vector2(274.76, 2593.334)
 scale = Vector2(0.7064359, 0.7064359)
 sprite_frames = SubResource("SpriteFrames_kc1f2")
 autoplay = "default"
