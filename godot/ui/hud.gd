@@ -2,7 +2,7 @@ extends CanvasLayer
 
 @export var mask_icons: VBoxContainer
 
-var mask_list: Array[TextureRect] = []
+var mask_list: Array[AnimatedSprite2D] = []
 
 #NOTE: 
 #Add maestro's satisfaction gauge
