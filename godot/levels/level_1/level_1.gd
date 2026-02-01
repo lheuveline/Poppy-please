@@ -16,4 +16,5 @@ func _process(_delta: float) -> void:
 	for character in musician_list:
 		all_good = all_good && character.plays_good
 	if all_good:
-		print("WIN")
+		print("Victory, switching to victory scene")
+		get_tree().change_scene_to_file("res://levels/victory_menu/victory_menu.tscn")
