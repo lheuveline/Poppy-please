@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://b6cwrew5yl8rc"]
 
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="1_rh6c5"]
+[ext_resource type="AudioStream" uid="uid://vjpc5lsxlwmk" path="res://audio/195937__michimuc2__short-wind-noise-soft.wav" id="3_be74f"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="5_44k5u"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h6hl0"]
 radius = 298.0
 height = 640.0
 
-[node name="Character" type="Node2D" unique_id=8466617]
+[node name="Character" type="Node2D" unique_id=8466617 groups=["characters"]]
 script = ExtResource("1_rh6c5")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=177601966]
@@ -23,11 +24,19 @@ volume_db = -80.0
 autoplay = true
 attenuation = 6.0
 
-[node name="Mask" type="Node2D" parent="." unique_id=1447723491 node_paths=PackedStringArray("good_track", "bad_track", "character")]
+[node name="Mask" type="Node2D" parent="." unique_id=1447723491 node_paths=PackedStringArray("good_track", "bad_track", "mask_pushed_sound", "mask_pulled_sound", "character")]
 script = ExtResource("5_44k5u")
 good_track = NodePath("../GoodTrack")
 bad_track = NodePath("../BadTrack")
+mask_pushed_sound = NodePath("../MaskPush")
+mask_pulled_sound = NodePath("../MaskPull")
 character = NodePath("..")
+
+[node name="MaskPush" type="AudioStreamPlayer2D" parent="." unique_id=153447394]
+stream = ExtResource("3_be74f")
+
+[node name="MaskPull" type="AudioStreamPlayer2D" parent="." unique_id=1863549633]
+stream = ExtResource("3_be74f")
 
 [node name="Range" type="Area2D" parent="." unique_id=1403962186]
 

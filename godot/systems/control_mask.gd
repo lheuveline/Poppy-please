@@ -2,6 +2,8 @@ extends Node2D
 
 @export var good_track: AudioStreamPlayer2D
 @export var bad_track: AudioStreamPlayer2D
+@export var mask_pushed_sound: AudioStreamPlayer2D
+@export var mask_pulled_sound: AudioStreamPlayer2D
 @export var character: Node2D
 
 func _ready() -> void:
@@ -14,10 +16,12 @@ func _process(_delta: float) -> void:
 			if not character.masked: 
 				print("[control_mask] Mask pushed signal emitted")
 				GlobalData.mask_pushed.emit()
+				mask_pushed_sound.play()
 				character.masked = true
 			else:
 				print("[control_mask] Mask pulled signal emitted")
 				GlobalData.mask_pulled.emit()
+				mask_pulled_sound.play()
 				character.masked = false
 		else:
 			return
