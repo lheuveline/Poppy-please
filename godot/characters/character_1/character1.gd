@@ -7,6 +7,8 @@ var plays_good = true
 #make 1 play bad (volume up) at initialize
 #check whether all "plays good" true at right time
 #win
+@export var clickable_true_sound: AudioStreamPlayer2D
+@export var clickable_false_sound: AudioStreamPlayer2D
 
 func _ready() -> void:
 	pass # Replace with function body.
