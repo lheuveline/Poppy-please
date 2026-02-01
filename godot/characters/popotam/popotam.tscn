@@ -1,8 +1,11 @@
 [gd_scene format=3 uid="uid://c3quf2ct0v1vm"]
 
 [ext_resource type="Texture2D" uid="uid://lf25f8w7uxdk" path="res://characters/popotam/popotam_idlde_1.png" id="1_3jmrb"]
-[ext_resource type="Script" uid="uid://cpxkn7ii24oac" path="res://characters/popotam/popotam.gd" id="1_55h8c"]
 [ext_resource type="Texture2D" uid="uid://cykcs43w12y1u" path="res://characters/popotam/popotam_idlde_2.png" id="2_55h8c"]
+[ext_resource type="Script" uid="uid://cgamdmoxnmdoe" path="res://characters/popotam/animated_sprite_2d.gd" id="4_1fsm5"]
+[ext_resource type="AudioStream" uid="uid://7k8yjo0kpms1" path="res://audio/GGJ-2026-clar-true.wav" id="5_7mqf8"]
+[ext_resource type="AudioStream" uid="uid://n3k14c1klifc" path="res://audio/GGJ-2026-clar-false.wav" id="6_1fsm5"]
+[ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="6_7mqf8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xvaeb"]
 animations = [{
@@ -18,11 +21,94 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="Popotam" type="Node2D" unique_id=1010880442]
-script = ExtResource("1_55h8c")
+[sub_resource type="Animation" id="Animation_78yxt"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944759271]
+[sub_resource type="Animation" id="Animation_gvitu"]
+resource_name = "fade_down"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3016154),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [10.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_oqjd8"]
+resource_name = "fade_up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.30270034),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 10.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4aihu"]
+_data = {
+&"RESET": SubResource("Animation_78yxt"),
+&"fade_down": SubResource("Animation_gvitu"),
+&"fade_up": SubResource("Animation_oqjd8")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t8lxs"]
+radius = 134.99998
+height = 269.99997
+
+[node name="Popotam" type="Node2D" unique_id=1010880442]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1944759271 groups=["monocle"]]
 sprite_frames = SubResource("SpriteFrames_xvaeb")
 animation = &"idle"
 frame = 1
 frame_progress = 0.8493154
+script = ExtResource("4_1fsm5")
+
+[node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1733841575]
+stream = ExtResource("5_7mqf8")
+autoplay = true
+
+[node name="BadTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=841999643]
+stream = ExtResource("6_1fsm5")
+volume_db = -80.0
+autoplay = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=262119668]
+root_node = NodePath("../..")
+libraries/ = SubResource("AnimationLibrary_4aihu")
+
+[node name="Range" type="Area2D" parent="." unique_id=364070392]
+
+[node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=1771978811]
+shape = SubResource("CapsuleShape2D_t8lxs")
+
+[node name="Mask" type="Node2D" parent="." unique_id=564014706 node_paths=PackedStringArray("good_track", "bad_track", "character", "music_anim")]
+script = ExtResource("6_7mqf8")
+good_track = NodePath("../AnimatedSprite2D/GoodTrack")
+bad_track = NodePath("../AnimatedSprite2D/BadTrack")
+character = NodePath("../AnimatedSprite2D")
+music_anim = NodePath("../AnimatedSprite2D/AnimationPlayer")
+
+[connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
