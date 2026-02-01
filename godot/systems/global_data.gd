@@ -20,7 +20,7 @@ func on_mask_pushed():
 	if mask_inventory > 1:
 		mask_inventory -= 1
 		print("[global_date] Masks left: ", mask_inventory)
-		hud.remove_mask()
+		hud.update_masks(mask_inventory)
 	elif mask_inventory == 1:
 		get_tree().change_scene_to_file("res://levels/gameover_menu/gameover_menu.tscn")
 	elif mask_inventory > 5:
@@ -31,6 +31,6 @@ func on_mask_pulled():
 	if mask_inventory <= 4:
 		mask_inventory += 1
 		print("[global_date] Masks left: ", mask_inventory)
-		hud.add_mask()
+		hud.update_masks(mask_inventory)
 	else:
 		return

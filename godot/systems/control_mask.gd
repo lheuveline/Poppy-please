@@ -15,7 +15,7 @@ func _process(_delta: float) -> void:
 				switch_track()
 				GlobalData.mask_pushed.emit()
 				character.masked = true
-			if character.masked:
+			else:
 				GlobalData.mask_pulled.emit()
 				character.masked = false
 		else:

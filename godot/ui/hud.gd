@@ -18,17 +18,7 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	$Timer_Text.set_text(str(int(lvtimer.get_time_left())))
 
-func add_mask():
-	for icon in mask_list:
-		if not icon.visible:
-			icon.visible = true
-			print("[hud] Mask added")
-			return
-			#NOTE: doesn't work
-
-func remove_mask():
-	for i in range(mask_list.size() -1, -1, -1):
-		if mask_list[i].visible:
-			mask_list[i].visible = false
-			print("[hud] Mask removed")
-			return
+func update_masks(mask_inventory: int) -> void:
+	for i in range(mask_list.size()):
+		var visible = (i < mask_inventory)
+		mask_list[i].visible = visible
