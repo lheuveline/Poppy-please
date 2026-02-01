@@ -3,48 +3,132 @@
 [ext_resource type="Script" uid="uid://db5gw7cjhraba" path="res://ui/hud.gd" id="1_6ca3a"]
 [ext_resource type="Texture2D" uid="uid://mrxwamg8iexy" path="res://characters/Masques/Masqueethereal.png" id="2_1v5rv"]
 [ext_resource type="Texture2D" uid="uid://bnd4gxoqmovw5" path="res://characters/Masques/masquetielle.png" id="3_q43x7"]
+[ext_resource type="Texture2D" uid="uid://j31nli5ol7oa" path="res://characters/Masques/masquebois2.png" id="3_srpbi"]
 [ext_resource type="Texture2D" uid="uid://d0utomkiarb2q" path="res://characters/Masques/masquekoak.png" id="4_srpbi"]
+[ext_resource type="Texture2D" uid="uid://nxncuppsye1g" path="res://characters/Masques/masquetielle2.png" id="5_m0eg6"]
 [ext_resource type="Texture2D" uid="uid://cixgrptp7ewjj" path="res://characters/Masques/masquebouh.png" id="5_spcu4"]
 [ext_resource type="Texture2D" uid="uid://b0380mqyu2j52" path="res://characters/Masques/Masquedeiencli.png" id="6_ff8ar"]
+[ext_resource type="Texture2D" uid="uid://cmoa2vo2phxq0" path="res://characters/Masques/masquekoak2.png" id="7_b00kl"]
+[ext_resource type="Texture2D" uid="uid://b7jv5lwrfw32d" path="res://characters/Masques/masquebouh2.png" id="9_so1yu"]
+[ext_resource type="Texture2D" uid="uid://tihejb22rbmg" path="res://characters/Masques/masquedeiencli2.png" id="11_65xic"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_spcu4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_1v5rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_srpbi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mp5xd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_q43x7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m0eg6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u6vop"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_srpbi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_b00kl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xtm2r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_spcu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_so1yu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kc1f2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_ff8ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_65xic")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
 
 [node name="Hud" type="CanvasLayer" unique_id=2079940244 node_paths=PackedStringArray("mask_icons")]
 script = ExtResource("1_6ca3a")
 mask_icons = NodePath("Masks")
 
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=946993744]
+offset_left = 26.725006
+offset_top = 153.0
+offset_right = 282.0
+offset_bottom = 1025.0
+
 [node name="Masks" type="VBoxContainer" parent="." unique_id=577845670]
 anchors_preset = -1
 anchor_left = 0.163
 anchor_right = 0.163
-offset_left = -286.235
-offset_top = 135.0
-offset_right = 500.76498
-offset_bottom = 2920.0
+offset_left = -272.96
+offset_top = 152.0
+offset_right = 497.0399
+offset_bottom = 2990.3335
 scale = Vector2(0.3, 0.3)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_constants/separation = 10
 alignment = 1
 
-[node name="Mask1" type="TextureRect" parent="Masks" unique_id=937781283]
-layout_mode = 2
-texture = ExtResource("2_1v5rv")
-stretch_mode = 3
+[node name="Mask1" type="AnimatedSprite2D" parent="Masks" unique_id=2107149975]
+position = Vector2(374.24988, 319.99988)
+sprite_frames = SubResource("SpriteFrames_spcu4")
+autoplay = "default"
+frame_progress = 0.58449376
 
-[node name="Mask2" type="TextureRect" parent="Masks" unique_id=465176499]
-layout_mode = 2
-texture = ExtResource("3_q43x7")
-stretch_mode = 3
+[node name="Mask2" type="AnimatedSprite2D" parent="Masks" unique_id=719694736]
+position = Vector2(384.25, 896.6665)
+sprite_frames = SubResource("SpriteFrames_mp5xd")
+frame_progress = 0.7639247
 
-[node name="Mask3" type="TextureRect" parent="Masks" unique_id=563663833]
-layout_mode = 2
-texture = ExtResource("4_srpbi")
-stretch_mode = 3
+[node name="Mask3" type="AnimatedSprite2D" parent="Masks" unique_id=1506660638]
+position = Vector2(384.24988, 1413.3335)
+sprite_frames = SubResource("SpriteFrames_u6vop")
+frame_progress = 0.6433124
 
-[node name="Mask4" type="TextureRect" parent="Masks" unique_id=2079782109]
-layout_mode = 2
-texture = ExtResource("5_spcu4")
-stretch_mode = 3
+[node name="Mask4" type="AnimatedSprite2D" parent="Masks" unique_id=256828879]
+position = Vector2(387.58325, 2096.666)
+sprite_frames = SubResource("SpriteFrames_xtm2r")
+frame_progress = 0.15065967
 
-[node name="Mask5" type="TextureRect" parent="Masks" unique_id=1635991617]
-layout_mode = 2
-texture = ExtResource("6_ff8ar")
+[node name="Mask5" type="AnimatedSprite2D" parent="Masks" unique_id=445531436]
+position = Vector2(397.58325, 2593.334)
+scale = Vector2(0.7064359, 0.7064359)
+sprite_frames = SubResource("SpriteFrames_kc1f2")
+frame_progress = 0.12445247
