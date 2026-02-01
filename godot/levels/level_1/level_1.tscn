@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bc4seuffuekr4" path="res://player/player.tscn" id="4_kx6l7"]
 [ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://ui/pause_menu.tscn" id="6_btoec"]
-[ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character_1/character1.tscn" id="6_gwceb"]
 [ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
 [ext_resource type="PackedScene" uid="uid://c3quf2ct0v1vm" path="res://characters/popotam/popotam.tscn" id="9_8jbay"]
@@ -43,9 +42,6 @@ autostart = true
 [node name="Worm" parent="Musiciens" unique_id=615808439 instance=ExtResource("8_j48du")]
 position = Vector2(-516, -300)
 
-[node name="Character1" parent="Musiciens" unique_id=2040593931 instance=ExtResource("6_gwceb")]
-position = Vector2(480, 0)
-
 [node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
 position = Vector2(419, 76)
 
@@ -56,5 +52,3 @@ position = Vector2(-403, 252)
 position = Vector2(2, 378)
 
 [connection signal="timeout" from="LevelTimer" to="." method="_on_level_timer_timeout"]
-
-[editable path="Musiciens/Character1"]
