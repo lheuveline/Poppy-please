@@ -2,6 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://cyaavjlxvkjmm" path="res://player/placeholder_player.png" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://cqi4ggvg8ny8o" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Shader" uid="uid://3x8v1g4w5gll" path="res://player/monocle.gdshader" id="3_g1dw6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g1dw6"]
+shader = ExtResource("3_g1dw6")
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_rkbax"]
 animations = [{
@@ -22,8 +26,10 @@ script = ExtResource("1_rkbax")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1004790648]
 modulate = Color(1, 1, 1, 0.21960784)
+material = SubResource("ShaderMaterial_g1dw6")
 scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_rkbax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1381575702]
+visible = false
 shape = SubResource("CircleShape2D_g1dw6")
