@@ -35,6 +35,11 @@ position = Vector2(-541, 179)
 [node name="Worm" parent="." unique_id=615808439 instance=ExtResource("8_j48du")]
 position = Vector2(-401, -269)
 
+[node name="Spider" parent="." unique_id=2046092631 instance=ExtResource("10_hyp3v")]
+position = Vector2(232, 176)
+
+[node name="Hud" parent="." unique_id=2079940244 instance=ExtResource("7_gwceb")]
+
 [node name="PauseMenu" parent="." unique_id=247568910 instance=ExtResource("6_btoec")]
 anchors_preset = 8
 anchor_left = 0.5
@@ -44,8 +49,3 @@ anchor_bottom = 0.5
 offset_left = -3.0
 offset_top = -57.0
 offset_bottom = -57.0
-
-[node name="Hud" parent="." unique_id=2079940244 instance=ExtResource("7_gwceb")]
-
-[node name="Spider" parent="." unique_id=2046092631 instance=ExtResource("10_hyp3v")]
-position = Vector2(232, 176)
