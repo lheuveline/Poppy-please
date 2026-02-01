@@ -19,7 +19,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g1dw6"]
-radius = 64.195015
+radius = 184.0
 
 [node name="monocle" type="CharacterBody2D" unique_id=1529263460 groups=["monocle"]]
 script = ExtResource("1_rkbax")
@@ -27,9 +27,8 @@ script = ExtResource("1_rkbax")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1004790648]
 modulate = Color(1, 1, 1, 0.21960784)
 material = SubResource("ShaderMaterial_g1dw6")
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.8, 0.8)
 sprite_frames = SubResource("SpriteFrames_rkbax")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1381575702]
-visible = false
 shape = SubResource("CircleShape2D_g1dw6")
