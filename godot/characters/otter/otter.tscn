@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cingbfpluwos8" path="res://characters/otter/otter_idle_1.png" id="2_268vb"]
 [ext_resource type="Texture2D" uid="uid://c5sagqvnvbeu0" path="res://characters/otter/otter_idle_2.png" id="3_mimg4"]
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="3_s6bp6"]
-[ext_resource type="AudioStream" uid="uid://7k8yjo0kpms1" path="res://audio/GGJ-2026-clar-true.wav" id="4_3lyk6"]
-[ext_resource type="AudioStream" uid="uid://n3k14c1klifc" path="res://audio/GGJ-2026-clar-false.wav" id="5_s6bp6"]
+[ext_resource type="AudioStream" uid="uid://bt26hxn5xxygx" path="res://audio/GGJ-2026-lead-true.wav" id="4_s6bp6"]
+[ext_resource type="AudioStream" uid="uid://chy7ep71npbkf" path="res://audio/GGJ-2026-lead-false.wav" id="5_h6hl0"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="6_s6bp6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6jrdx"]
@@ -86,13 +86,15 @@ autoplay = "idle"
 script = ExtResource("3_s6bp6")
 
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1631760145]
-stream = ExtResource("4_3lyk6")
+stream = ExtResource("4_s6bp6")
 autoplay = true
+attenuation = 6.0
 
 [node name="BadTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1186117539]
-stream = ExtResource("5_s6bp6")
+stream = ExtResource("5_h6hl0")
 volume_db = -80.0
 autoplay = true
+attenuation = 6.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=1596015137]
 root_node = NodePath("../..")

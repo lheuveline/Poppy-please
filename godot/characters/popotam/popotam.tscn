@@ -90,11 +90,13 @@ script = ExtResource("3_7mqf8")
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=1733841575]
 stream = ExtResource("5_7mqf8")
 autoplay = true
+attenuation = 6.0
 
 [node name="BadTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=841999643]
 stream = ExtResource("6_1fsm5")
 volume_db = -80.0
 autoplay = true
+attenuation = 6.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=262119668]
 root_node = NodePath("../..")

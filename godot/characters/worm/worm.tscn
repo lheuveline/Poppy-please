@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://c3b8koy5ii787" path="res://characters/worm/worm_idle_1.png" id="1_74jmy"]
 [ext_resource type="Texture2D" uid="uid://byw1esyyxb54q" path="res://characters/worm/worm_idle_2.png" id="2_ygbm4"]
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="3_lgxcy"]
-[ext_resource type="AudioStream" uid="uid://bt26hxn5xxygx" path="res://audio/GGJ-2026-lead-true.wav" id="4_lgxcy"]
-[ext_resource type="AudioStream" uid="uid://chy7ep71npbkf" path="res://audio/GGJ-2026-lead-false.wav" id="5_spafc"]
+[ext_resource type="AudioStream" uid="uid://gggf2p8kwsqu" path="res://audio/GGJ-2026-sax-true.wav" id="4_lgxcy"]
+[ext_resource type="AudioStream" uid="uid://meqrrhotct7" path="res://audio/GGJ-2026-kazoo-FALSE.wav" id="5_spafc"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="6_lgxcy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vbe11"]
@@ -90,11 +90,13 @@ script = ExtResource("3_lgxcy")
 [node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=673034135]
 stream = ExtResource("4_lgxcy")
 autoplay = true
+attenuation = 6.0
 
 [node name="BadTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=496155325]
 stream = ExtResource("5_spafc")
 volume_db = -80.0
 autoplay = true
+attenuation = 6.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=1200989954]
 root_node = NodePath("../..")
