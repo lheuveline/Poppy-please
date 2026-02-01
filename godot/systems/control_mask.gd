@@ -10,18 +10,20 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):
 		if character.clickable:
+			switch_track()
 			if not character.masked: 
-				print("[control_mask] Tracks switched, mask pushed signal emitted")
-				switch_track()
+				print("[control_mask] Mask pushed signal emitted")
 				GlobalData.mask_pushed.emit()
 				character.masked = true
 			else:
+				print("[control_mask] Mask pulled signal emitted")
 				GlobalData.mask_pulled.emit()
 				character.masked = false
 		else:
 			return
 
 func switch_track():
+		print("[control_mask] Tracks switched, mask pushed signal emitted")
 		var temp = good_track.volume_linear
 		good_track.volume_linear = bad_track.volume_linear
 		bad_track.volume_linear = temp

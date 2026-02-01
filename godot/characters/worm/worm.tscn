@@ -1,11 +1,10 @@
 [gd_scene format=3 uid="uid://yf2f68drlvqj"]
 
 [ext_resource type="Texture2D" uid="uid://c3b8koy5ii787" path="res://characters/worm/worm_idle_1.png" id="1_74jmy"]
+[ext_resource type="PackedScene" uid="uid://b6cwrew5yl8rc" path="res://characters/character_1/character1.tscn" id="1_f4kbm"]
 [ext_resource type="Texture2D" uid="uid://byw1esyyxb54q" path="res://characters/worm/worm_idle_2.png" id="2_ygbm4"]
-[ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="3_lgxcy"]
 [ext_resource type="AudioStream" uid="uid://gggf2p8kwsqu" path="res://audio/GGJ-2026-sax-true.wav" id="4_lgxcy"]
 [ext_resource type="AudioStream" uid="uid://meqrrhotct7" path="res://audio/GGJ-2026-kazoo-FALSE.wav" id="5_spafc"]
-[ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="6_lgxcy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vbe11"]
 animations = [{
@@ -21,96 +20,17 @@ animations = [{
 "speed": 2.0
 }]
 
-[sub_resource type="Animation" id="Animation_78yxt"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="Animation_gvitu"]
-resource_name = "fade_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3016154),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [10.0, 0.0]
-}
-
-[sub_resource type="Animation" id="Animation_oqjd8"]
-resource_name = "fade_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D/GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.30270034),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 10.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_spafc"]
-_data = {
-&"RESET": SubResource("Animation_78yxt"),
-&"fade_down": SubResource("Animation_gvitu"),
-&"fade_up": SubResource("Animation_oqjd8")
-}
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_spafc"]
-radius = 134.99998
-height = 269.99997
-
 [node name="Worm" type="Node2D" unique_id=615808439]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=806401732]
-scale = Vector2(0.55, 0.55)
+[node name="Character" parent="." unique_id=177601966 instance=ExtResource("1_f4kbm")]
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_vbe11")
 animation = &"idle"
-autoplay = "idle"
-frame_progress = 0.015519454
-script = ExtResource("3_lgxcy")
 
-[node name="GoodTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=673034135]
+[node name="GoodTrack" parent="Character" index="0" unique_id=41276720]
 stream = ExtResource("4_lgxcy")
-autoplay = true
-attenuation = 6.0
 
-[node name="BadTrack" type="AudioStreamPlayer2D" parent="AnimatedSprite2D" unique_id=496155325]
+[node name="BadTrack" parent="Character" index="1" unique_id=1770106595]
 stream = ExtResource("5_spafc")
-volume_db = -80.0
-autoplay = true
-attenuation = 6.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2D" unique_id=1200989954]
-root_node = NodePath("../..")
-libraries/ = SubResource("AnimationLibrary_spafc")
-
-[node name="Mask" type="Node2D" parent="." unique_id=1058311109 node_paths=PackedStringArray("good_track", "bad_track", "character")]
-script = ExtResource("6_lgxcy")
-good_track = NodePath("../AnimatedSprite2D/GoodTrack")
-bad_track = NodePath("../AnimatedSprite2D/BadTrack")
-character = NodePath("../AnimatedSprite2D")
-
-[node name="Range" type="Area2D" parent="." unique_id=470003387]
-
-[node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=1189072457]
-shape = SubResource("CapsuleShape2D_spafc")
-
-[connection signal="body_entered" from="Range" to="AnimatedSprite2D" method="_on_range_body_entered"]
+[editable path="Character"]

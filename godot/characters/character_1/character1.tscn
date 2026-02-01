@@ -1,116 +1,36 @@
 [gd_scene format=3 uid="uid://b6cwrew5yl8rc"]
 
-[ext_resource type="Texture2D" uid="uid://uf1uwkewvgtf" path="res://icon.svg" id="1_m6l6w"]
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="1_rh6c5"]
-[ext_resource type="AudioStream" uid="uid://bt26hxn5xxygx" path="res://audio/GGJ-2026-lead-true.wav" id="3_gvitu"]
-[ext_resource type="AudioStream" uid="uid://chy7ep71npbkf" path="res://audio/GGJ-2026-lead-false.wav" id="4_1elps"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="5_44k5u"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_78yxt"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_m6l6w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_m6l6w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_m6l6w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("1_m6l6w")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h6hl0"]
+radius = 298.0
+height = 640.0
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oqjd8"]
-radius = 134.99998
-height = 269.99997
-
-[sub_resource type="Animation" id="Animation_78yxt"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="Animation" id="Animation_gvitu"]
-resource_name = "fade_down"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.3016154),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [10.0, 0.0]
-}
-
-[sub_resource type="Animation" id="Animation_oqjd8"]
-resource_name = "fade_up"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("GoodTrack:volume_db")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.30270034),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 10.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_gvitu"]
-_data = {
-&"RESET": SubResource("Animation_78yxt"),
-&"fade_down": SubResource("Animation_gvitu"),
-&"fade_up": SubResource("Animation_oqjd8")
-}
-
-[node name="Character1" type="AnimatedSprite2D" unique_id=2040593931 node_paths=PackedStringArray("music_anim") groups=["characters"]]
-scale = Vector2(0.3, 0.3)
-sprite_frames = SubResource("SpriteFrames_78yxt")
-autoplay = "default"
+[node name="Character" type="AnimatedSprite2D" unique_id=177601966]
+animation = &""
+autoplay = "idle"
 script = ExtResource("1_rh6c5")
-music_anim = NodePath("AnimationPlayer")
 
-[node name="Range" type="Area2D" parent="." unique_id=899758991]
-
-[node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=423472906]
-shape = SubResource("CapsuleShape2D_oqjd8")
-
-[node name="GoodTrack" type="AudioStreamPlayer2D" parent="." unique_id=952693435]
-stream = ExtResource("3_gvitu")
+[node name="GoodTrack" type="AudioStreamPlayer2D" parent="." unique_id=41276720]
 autoplay = true
+attenuation = 6.0
 
-[node name="BadTrack" type="AudioStreamPlayer2D" parent="." unique_id=926854563]
-stream = ExtResource("4_1elps")
+[node name="BadTrack" type="AudioStreamPlayer2D" parent="." unique_id=1770106595]
 volume_db = -80.0
 autoplay = true
+attenuation = 6.0
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1239405159]
-libraries/ = SubResource("AnimationLibrary_gvitu")
-
-[node name="Node2D" type="Node2D" parent="." unique_id=761957182 node_paths=PackedStringArray("good_track", "bad_track", "character")]
+[node name="Mask" type="Node2D" parent="." unique_id=1447723491 node_paths=PackedStringArray("good_track", "bad_track", "character")]
 script = ExtResource("5_44k5u")
 good_track = NodePath("../GoodTrack")
 bad_track = NodePath("../BadTrack")
 character = NodePath("..")
+
+[node name="Range" type="Area2D" parent="." unique_id=1403962186]
+
+[node name="CollisionRange" type="CollisionShape2D" parent="Range" unique_id=941879749]
+shape = SubResource("CapsuleShape2D_h6hl0")
 
 [connection signal="body_entered" from="Range" to="." method="_on_range_body_entered"]
 [connection signal="body_exited" from="Range" to="." method="_on_range_body_exited"]
