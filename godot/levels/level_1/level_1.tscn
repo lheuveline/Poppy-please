@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://ui/hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
 [ext_resource type="PackedScene" uid="uid://c3quf2ct0v1vm" path="res://characters/popotam/popotam.tscn" id="9_8jbay"]
+[ext_resource type="PackedScene" uid="uid://m232tc17nk3l" path="res://characters/spider/spider.tscn" id="10_hyp3v"]
 [ext_resource type="PackedScene" uid="uid://cjmvcdynym411" path="res://characters/otter/otter.tscn" id="10_la5aw"]
 [ext_resource type="PackedScene" uid="uid://uwafp4c1hvn4" path="res://characters/panda/panda.tscn" id="10_qbdb0"]
 
@@ -20,7 +21,7 @@ texture = ExtResource("3_bt44k")
 
 [node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
 z_index = 1
-position = Vector2(2, 378)
+position = Vector2(-94, 378)
 
 [node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
 position = Vector2(663, -165)
@@ -29,7 +30,7 @@ position = Vector2(663, -165)
 position = Vector2(161, -287)
 
 [node name="Otter" parent="." unique_id=1996141275 instance=ExtResource("10_la5aw")]
-position = Vector2(-437, 211)
+position = Vector2(-541, 179)
 
 [node name="Worm" parent="." unique_id=615808439 instance=ExtResource("8_j48du")]
 position = Vector2(-401, -269)
@@ -45,3 +46,6 @@ offset_top = -57.0
 offset_bottom = -57.0
 
 [node name="Hud" parent="." unique_id=2079940244 instance=ExtResource("7_gwceb")]
+
+[node name="Spider" parent="." unique_id=2046092631 instance=ExtResource("10_hyp3v")]
+position = Vector2(232, 176)
