@@ -21,8 +21,6 @@ func on_mask_pushed():
 		mask_inventory -= 1
 		print("[global_date] Masks left: ", mask_inventory)
 		hud.update_masks(mask_inventory)
-	elif mask_inventory == 1:
-		get_tree().change_scene_to_file("res://levels/gameover_menu/gameover_menu.tscn")
 	elif mask_inventory > 5:
 		print("[GlobalData] Mask pushed but without effect.")
 		return
