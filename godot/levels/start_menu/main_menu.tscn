@@ -59,7 +59,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_constants/outline_size = 49
 theme_override_fonts/font = SubResource("FontVariation_glbon")
 theme_override_font_sizes/font_size = 164
-text = "Mask that cacaphonia !"
+text = "Mask that cacophonia !"
 horizontal_alignment = 1
 vertical_alignment = 1
 
