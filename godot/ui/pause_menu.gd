@@ -4,8 +4,6 @@ extends Control
 @export var pause_deactivated_audio: AudioStreamPlayer
 
 func _ready():
-	$VBoxContainer/Start.grab_focus()
-	$VBoxContainer/Credits.grab_focus()
 	$AnimationPlayer.play("RESET")
 	print(pause_deactivated_audio)
 	hide()

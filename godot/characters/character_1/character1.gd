@@ -2,8 +2,8 @@ extends Node2D
 
 @export var music_anim: AnimationPlayer
 @export var masked = false
-var clickable = false
-var plays_good = true
+@export var plays_good = true
+@export var clickable = false
 #make 1 play bad (volume up) at initialize
 #check whether all "plays good" true at right time
 #win
