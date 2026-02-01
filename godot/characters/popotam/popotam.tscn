@@ -28,7 +28,7 @@ animations = [{
 sprite_frames = SubResource("SpriteFrames_xvaeb")
 animation = &"idle"
 
-[node name="GoodTrack" parent="Character" index="10" unique_id=41276720]
+[node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("5_7mqf8")
 
 [node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
