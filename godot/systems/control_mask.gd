@@ -8,8 +8,7 @@ signal mask_lost()
 #signal created; need to add emition condition + effect
 
 func _ready() -> void:
-	print(good_track.volume_linear)
-	pass
+		pass
 
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):

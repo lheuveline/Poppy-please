@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://beb7rd2gven0n"]
+
+[ext_resource type="Script" uid="uid://bj2oof3xqahma" path="res://levels/level_1.gd" id="1_jirdo"]
+[ext_resource type="PackedScene" uid="uid://cjafkdt4obng8" path="res://characters/maestro.tscn" id="2_bt44k"]
+[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://backgrounds/ref_screensize_mockup.png" id="3_bt44k"]
+[ext_resource type="AudioStream" uid="uid://cdg5mwe3oveda" path="res://audio/assets/GGJ-2026-guitar-true.wav" id="4_kx6l7"]
+
+[node name="Level_1" type="Node2D" unique_id=55783393]
+script = ExtResource("1_jirdo")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1678930424]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1054907506]
+texture = ExtResource("3_bt44k")
+
+[node name="Maestro" parent="." unique_id=844771032 instance=ExtResource("2_bt44k")]
+
+[node name="Audio" type="Node" parent="." unique_id=1405031752]
+
+[node name="Musicians" type="Node" parent="Audio" unique_id=569445754]
+
+[node name="AudioStreamPlayer2D0" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=464483379]
+stream = ExtResource("4_kx6l7")
+
+[node name="AudioStreamPlayer2D1" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=1409161371]
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=940997390]
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=1417291763]
+
+[node name="AudioStreamPlayer2D4" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=2076163694]
+
+[node name="AudioStreamPlayer2D5" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=2031554687]
+
+[node name="AudioStreamPlayer2D6" type="AudioStreamPlayer2D" parent="Audio/Musicians" unique_id=719666793]
