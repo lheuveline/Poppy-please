@@ -30,10 +30,8 @@ animation = &"idle"
 
 [node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("5_7mqf8")
-volume_db = -80.0
 
 [node name="BadTrack" parent="Character" index="2" unique_id=1770106595]
 stream = ExtResource("6_1fsm5")
-volume_db = 0.0
 
 [editable path="Character"]
