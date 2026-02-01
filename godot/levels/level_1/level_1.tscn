@@ -24,23 +24,29 @@ z_index = 1
 position = Vector2(-94, 378)
 
 [node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
-position = Vector2(663, -165)
+position = Vector2(703, -12)
+metadata/_edit_group_ = true
 
 [node name="Panda" parent="." unique_id=1965515281 instance=ExtResource("10_qbdb0")]
-position = Vector2(161, -287)
+position = Vector2(150, -257)
+metadata/_edit_group_ = true
 
 [node name="Otter" parent="." unique_id=1996141275 instance=ExtResource("10_la5aw")]
-position = Vector2(-541, 179)
+position = Vector2(-445, 241)
+metadata/_edit_group_ = true
 
 [node name="Worm" parent="." unique_id=615808439 instance=ExtResource("8_j48du")]
-position = Vector2(-401, -269)
+position = Vector2(-400, -237)
+metadata/_edit_group_ = true
 
 [node name="Spider" parent="." unique_id=2046092631 instance=ExtResource("10_hyp3v")]
-position = Vector2(232, 176)
+position = Vector2(167, 283)
+metadata/_edit_group_ = true
 
 [node name="Hud" parent="." unique_id=2079940244 instance=ExtResource("7_gwceb")]
 
 [node name="PauseMenu" parent="." unique_id=247568910 instance=ExtResource("6_btoec")]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
