@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://cjmvcdynym411"]
+
+[ext_resource type="Script" uid="uid://clwkdwrtskey8" path="res://characters/otter/otter.gd" id="1_6jrdx"]
+[ext_resource type="Texture2D" uid="uid://cingbfpluwos8" path="res://characters/otter/otter_idle_1.png" id="2_268vb"]
+[ext_resource type="Texture2D" uid="uid://c5sagqvnvbeu0" path="res://characters/otter/otter_idle_2.png" id="3_mimg4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6jrdx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_268vb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mimg4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
+
+[node name="Otter" type="Node2D" unique_id=1996141275]
+script = ExtResource("1_6jrdx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1466495857]
+sprite_frames = SubResource("SpriteFrames_6jrdx")
+animation = &"idle"
