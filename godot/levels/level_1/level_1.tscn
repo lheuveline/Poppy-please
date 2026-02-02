@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://m232tc17nk3l" path="res://characters/spider/spider.tscn" id="10_hyp3v"]
 [ext_resource type="PackedScene" uid="uid://cjmvcdynym411" path="res://characters/otter/otter.tscn" id="10_la5aw"]
 [ext_resource type="PackedScene" uid="uid://uwafp4c1hvn4" path="res://characters/panda/panda.tscn" id="10_qbdb0"]
+[ext_resource type="PackedScene" uid="uid://jpe4xbkugkm4" path="res://levels/victory_menu/new__victory__scene.tscn" id="11_qbdb0"]
 
 [node name="Level_1" type="Node2D" unique_id=55783393]
 script = ExtResource("1_jirdo")
@@ -55,3 +56,5 @@ anchor_bottom = 0.5
 offset_left = -3.0
 offset_top = -57.0
 offset_bottom = -57.0
+
+[node name="NewVictoryScene" parent="." unique_id=1199725148 instance=ExtResource("11_qbdb0")]

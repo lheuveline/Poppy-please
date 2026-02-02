@@ -1,5 +1,6 @@
 extends Node2D
 var musician_list: Array
+var not_won = true
 @onready var hud_scene = "res://ui/hud.tscn"
 
 func _ready() -> void:
@@ -15,6 +16,7 @@ func _process(_delta: float) -> void:
 	var all_good = true
 	for character in musician_list:
 		all_good = all_good && character.plays_good
-	if all_good:
-		print("Victory, switching to victory scene")
-		get_tree().change_scene_to_file("res://levels/victory_menu/victory_menu.tscn")
+	if all_good and not_won:
+		GlobalData.game_won.emit()
+		not_won = false
+		

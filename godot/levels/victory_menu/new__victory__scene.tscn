@@ -1,0 +1,170 @@
+[gd_scene format=3 uid="uid://jpe4xbkugkm4"]
+
+[ext_resource type="Script" uid="uid://x3tq2nsmloqt" path="res://levels/victory_menu/new__victory__scene.gd" id="1_lk8il"]
+[ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/roboto_regular.ttf" id="2_lo5dy"]
+[ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="3_1j4n4"]
+
+[sub_resource type="FontVariation" id="FontVariation_nhiow"]
+base_font = ExtResource("2_lo5dy")
+
+[sub_resource type="FontVariation" id="FontVariation_18onm"]
+base_font = ExtResource("3_1j4n4")
+
+[sub_resource type="Animation" id="Animation_lo5dy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Vignette:material:shader_parameter/alpha")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_1j4n4"]
+resource_name = "win_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.35147518, 0.76666665),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.35454553),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Vignette:material:shader_parameter/alpha")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.36666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_nhiow"]
+_data = {
+&"RESET": SubResource("Animation_lo5dy"),
+&"win_animation": SubResource("Animation_1j4n4")
+}
+
+[sub_resource type="Shader" id="Shader_lo5dy"]
+code = "shader_type canvas_item;
+
+uniform float alpha = 0.1;
+uniform float inner_radius = 0.0;
+uniform float outer_radius = 15.0;
+
+void fragment() {
+	float x = abs(UV.r-.5)*2.0;
+	float y = abs(UV.g-.5)*2.0;
+	float q = 1.0-(1.0-sqrt(x*x+y*y)/outer_radius)/(1.0-inner_radius);
+	COLOR = vec4(0, 0, 0, q*alpha);
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1j4n4"]
+shader = SubResource("Shader_lo5dy")
+shader_parameter/alpha = 0.0
+shader_parameter/inner_radius = 0.15
+shader_parameter/outer_radius = 3.0
+
+[node name="NewVictoryScene" type="CanvasLayer" unique_id=455769023]
+script = ExtResource("1_lk8il")
+
+[node name="Label" type="Label" parent="." unique_id=1774844586]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -221.5
+offset_top = 0.72998047
+offset_right = 221.5
+offset_bottom = 63.730103
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = SubResource("FontVariation_nhiow")
+theme_override_font_sizes/font_size = 39
+text = "Press any key to return to main menu."
+
+[node name="Label2" type="Label" parent="." unique_id=1315841241]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = -246.66
+offset_right = 38.0
+offset_bottom = -223.65991
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 30
+theme_override_fonts/font = SubResource("FontVariation_18onm")
+theme_override_font_sizes/font_size = 77
+text = "You won !"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1969605999]
+libraries/ = SubResource("AnimationLibrary_nhiow")
+
+[node name="Vignette" type="ColorRect" parent="." unique_id=2013744523]
+material = SubResource("ShaderMaterial_1j4n4")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.43090135, 0.43090135, 1)

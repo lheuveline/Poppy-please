@@ -5,6 +5,7 @@ var hud: Node = null
 signal mask_pushed()
 signal mask_pulled()
 signal victory_checked()
+signal game_won()
 
 func register_hud(hud_node: Node) -> void:
 	hud = hud_node
@@ -19,7 +20,7 @@ func _process(_delta: float) -> void:
 	pass
 
 func on_mask_pushed():
-	if mask_inventory > 1:
+	if mask_inventory > 0:
 		mask_inventory -= 1
 		print("[global_date] Masks left: ", mask_inventory)
 		hud.update_masks(mask_inventory)
