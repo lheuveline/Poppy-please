@@ -4,7 +4,7 @@
 
 - GlobalGameJam 2026
 - https://globalgamejam.org/games/2026/mask-cacophonia-2
-- Play the maestro of a wild orchestra: spot the cacophony makers and mask them in the name of good music!
+- Spot the cacophony makers and mask them in the name of good music!
 
 # Synopsis
 
