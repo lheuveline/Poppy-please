@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cixgrptp7ewjj"
-path="res://.godot/imported/masquebouh.png-9ee3cd6049843031b05fc28784a17ca2.ctex"
+uid="uid://b0380mqyu2j52"
+path="res://.godot/imported/Masquedeiencli.png-8e5d3472bca4ee8a3748ce5e7eca0b13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/Masques/masquebouh.png"
-dest_files=["res://.godot/imported/masquebouh.png-9ee3cd6049843031b05fc28784a17ca2.ctex"]
+source_file="res://characters/mask/Masquedeiencli.png"
+dest_files=["res://.godot/imported/Masquedeiencli.png-8e5d3472bca4ee8a3748ce5e7eca0b13.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j31nli5ol7oa"
-path="res://.godot/imported/masquebois2.png-81452e512e59f3c10cbd10fd1cb59cd1.ctex"
+uid="uid://cmoa2vo2phxq0"
+path="res://.godot/imported/masquekoak2.png-462716d9fb531d37731e73717f5b1c9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://characters/Masques/masquebois2.png"
-dest_files=["res://.godot/imported/masquebois2.png-81452e512e59f3c10cbd10fd1cb59cd1.ctex"]
+source_file="res://characters/mask/masquekoak2.png"
+dest_files=["res://.godot/imported/masquekoak2.png-462716d9fb531d37731e73717f5b1c9b.ctex"]
 
 [params]
 
