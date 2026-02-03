@@ -1,8 +1,10 @@
 # Mask that Cacophonia
 
-> GlobalGameJam 2026
-> https://globalgamejam.org/games/2026/mask-cacophonia-2
-> Play the maestro of a wild orchestra: spot the cacophony makers and mask them in the name of good music!
+![cover](cover.png)
+
+- GlobalGameJam 2026
+- https://globalgamejam.org/games/2026/mask-cacophonia-2
+- Play the maestro of a wild orchestra: spot the cacophony makers and mask them in the name of good music!
 
 # Synopsis
 
@@ -45,9 +47,9 @@ Credits for all tools and libraries used by the game.
 
 # Team
 
-- Eva (programming)
-- Tiny (game design)
-- Louis (music)
+- [Eva](https://github.com/saltyswan) (programming)
+- [Tiny](https://github.com/missfromaj) (game design)
+- [Louis](https://github.com/lheuveline) (music)
 - [wsmind](https://github.com/wsmind) (music)
 - [AuroreCello](https://github.com/AuroreCello) (music)
 - [Geekymoose](https://github.com/geekymoose) (art)
