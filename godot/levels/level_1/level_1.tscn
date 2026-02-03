@@ -50,11 +50,3 @@ metadata/_edit_group_ = true
 
 [node name="PauseMenu" parent="." unique_id=247568910 instance=ExtResource("6_btoec")]
 visible = false
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -3.0
-offset_top = -57.0
-offset_bottom = -57.0
