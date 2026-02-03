@@ -4,7 +4,7 @@
 [ext_resource type="AudioStream" uid="uid://bg5dpjsgdqxnd" path="res://audio/KSHMR_Vocal_Shout_33_Whoo_C#.wav" id="3_66nm0"]
 [ext_resource type="AudioStream" uid="uid://vjpc5lsxlwmk" path="res://audio/195937__michimuc2__short-wind-noise-soft.wav" id="3_be74f"]
 [ext_resource type="AudioStream" uid="uid://bv0w5i2bm3v85" path="res://audio/GGJ-2026-clickable-true.wav" id="5_20pwa"]
-[ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://systems/control_mask.gd" id="5_44k5u"]
+[ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://player/control_mask.gd" id="5_44k5u"]
 [ext_resource type="AudioStream" uid="uid://bk717sscnula6" path="res://audio/GGJ-2026-clickable-false.wav" id="6_y5x5e"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h6hl0"]

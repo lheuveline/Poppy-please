@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://flme2od6bunq"
-path="res://.godot/imported/boucle-sans-fin.png-75f1cab689f30e8ee857c5f1ba6c1ee9.ctex"
+uid="uid://bfb0nr8i0x8px"
+path="res://.godot/imported/credits_background.jpg-26231c35d69da9d0d8d1b56a64ddd632.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ui/boucle-sans-fin.png"
-dest_files=["res://.godot/imported/boucle-sans-fin.png-75f1cab689f30e8ee857c5f1ba6c1ee9.ctex"]
+source_file="res://backgrounds/credits_background.jpg"
+dest_files=["res://.godot/imported/credits_background.jpg-26231c35d69da9d0d8d1b56a64ddd632.ctex"]
 
 [params]
 
