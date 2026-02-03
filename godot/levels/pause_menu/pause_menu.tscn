@@ -66,18 +66,11 @@ _data = {
 &"blur": SubResource("Animation_2nc7s")
 }
 
-[node name="PauseMenu" type="Control" unique_id=247568910]
+[node name="PauseMenu" type="CanvasLayer" unique_id=1645352922]
 process_mode = 3
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
 script = ExtResource("1_05uyy")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1619161699]
-layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.448
@@ -93,7 +86,6 @@ color = Color(0.011764706, 0.011764706, 0.011764706, 0.22352941)
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=228582075]
 modulate = Color(1, 1, 1, 0)
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -102,6 +94,8 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1429324638]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="Resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1895306756]
 layout_mode = 2
