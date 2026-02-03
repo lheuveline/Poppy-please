@@ -6,10 +6,6 @@ var game_won = false
 func _ready() -> void:
 	GlobalData.game_won.connect(on_game_won)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
-
 func on_game_won():
 	game_won = true
 	$AnimationPlayer.play("win_animation")

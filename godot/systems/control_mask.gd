@@ -7,9 +7,6 @@ extends Node2D
 @export var character: Node2D
 @onready var chara_scene = "res://characters/character_1/character1.tscn"
 
-func _ready() -> void:
-	pass
-
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("throw_mask"):
 		if character.clickable:

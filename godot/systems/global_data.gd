@@ -4,7 +4,6 @@ var mask_inventory = 5
 var hud: Node = null
 signal mask_pushed()
 signal mask_pulled()
-signal victory_checked()
 signal game_won()
 
 func register_hud(hud_node: Node) -> void:
@@ -14,10 +13,6 @@ func _ready() -> void:
 	print("[GlobalData] Masks: ", mask_inventory)
 	mask_pulled.connect(on_mask_pulled)
 	mask_pushed.connect(on_mask_pushed)
-	#victory_checked.connect(on_victory_checked)
-
-func _process(_delta: float) -> void:
-	pass
 
 func on_mask_pushed():
 	if mask_inventory > 0:
