@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://x3tq2nsmloqt" path="res://levels/victory_menu/victory.gd" id="1_lk8il"]
 [ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/roboto_regular.ttf" id="2_lo5dy"]
 [ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="3_1j4n4"]
-[ext_resource type="AudioStream" uid="uid://bo3ohyoqkll24" path="res://audio/GGJ-20266-main-theme.wav" id="4_cjubk"]
+[ext_resource type="AudioStream" uid="uid://vqnq2sr0kvf3" path="res://audio/GGJ-2026-victory.wav" id="4_cjubk"]
 
 [sub_resource type="FontVariation" id="FontVariation_nhiow"]
 base_font = ExtResource("2_lo5dy")
@@ -170,6 +170,5 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0.43090135, 0.43090135, 1)
 
-[node name="VictoryTheme" type="AudioStreamPlayer" parent="." unique_id=1578642149]
+[node name="VictorySound" type="AudioStreamPlayer" parent="." unique_id=2044354330]
 stream = ExtResource("4_cjubk")
-autoplay = true

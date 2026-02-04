@@ -7,7 +7,7 @@ func _ready() -> void:
 
 func on_game_won():
 	print("[VictoryMenu] Game is won")
-	$VictoryTheme.play()
+	$VictorySound.play()
 	$AnimationPlayer.play("win_animation")
 	await $AnimationPlayer.animation_finished
 	game_won = true
