@@ -4,6 +4,10 @@
 [ext_resource type="Script" uid="uid://ce072oxj8owl" path="res://levels/start_menu/main_menu.gd" id="1_jix8l"]
 [ext_resource type="Texture2D" uid="uid://b8ghaodjgclct" path="res://backgrounds/background_welcome.png" id="2_78d18"]
 [ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="3_fu7sn"]
+[ext_resource type="AudioStream" uid="uid://bo3ohyoqkll24" path="res://audio/GGJ-20266-main-theme.wav" id="5_xcxou"]
+[ext_resource type="AudioStream" uid="uid://dp5xsiqgpkm3k" path="res://audio/GGJ-20266-start-pressed.wav" id="6_ob17i"]
+[ext_resource type="AudioStream" uid="uid://cckni24pmtbbv" path="res://audio/GGJ-20266-stop-pressed.wav" id="7_uuqnp"]
+[ext_resource type="AudioStream" uid="uid://6ncgyaod7y3r" path="res://audio/GGJ-20266-quit-pressed.wav" id="8_pmqns"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jgsm7"]
 texture = ExtResource("2_78d18")
@@ -86,6 +90,21 @@ theme_override_fonts/font = SubResource("FontVariation_7vrkn")
 theme_override_font_sizes/font_size = 92
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Quit"
+
+[node name="Audio" type="Node" parent="." unique_id=1184439593]
+
+[node name="MainTheme" type="AudioStreamPlayer" parent="Audio" unique_id=382382254]
+stream = ExtResource("5_xcxou")
+autoplay = true
+
+[node name="StartKeyPressed" type="AudioStreamPlayer" parent="Audio" unique_id=675996537]
+stream = ExtResource("6_ob17i")
+
+[node name="CreditsKeyPressed" type="AudioStreamPlayer" parent="Audio" unique_id=642553028]
+stream = ExtResource("7_uuqnp")
+
+[node name="QuitKeyPressed" type="AudioStreamPlayer" parent="Audio" unique_id=914467757]
+stream = ExtResource("8_pmqns")
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
