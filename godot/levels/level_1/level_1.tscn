@@ -22,7 +22,8 @@ texture = ExtResource("3_bt44k")
 
 [node name="monocle" parent="." unique_id=1529263460 instance=ExtResource("4_kx6l7")]
 z_index = 1
-position = Vector2(-94, 378)
+position = Vector2(-115, 93)
+metadata/_edit_group_ = true
 
 [node name="Popotam" parent="." unique_id=1010880442 instance=ExtResource("9_8jbay")]
 position = Vector2(703, -12)
