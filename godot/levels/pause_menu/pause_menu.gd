@@ -2,6 +2,7 @@ extends CanvasLayer
 
 func _ready():
 	$AnimationPlayer.play("RESET")
+	$PanelContainer/VBoxContainer/Resume.grab_focus()
 	hide()
 
 func resume():
