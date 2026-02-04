@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfb0nr8i0x8px"
-path="res://.godot/imported/credits_background.jpg-26231c35d69da9d0d8d1b56a64ddd632.ctex"
+uid="uid://bgyse3l4r5kcw"
+path="res://.godot/imported/onara.png-796a31c906832e4b79bfb79f261f72b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/credits_background.jpg"
-dest_files=["res://.godot/imported/credits_background.jpg-26231c35d69da9d0d8d1b56a64ddd632.ctex"]
+source_file="res://levels/credits/onara.png"
+dest_files=["res://.godot/imported/onara.png-796a31c906832e4b79bfb79f261f72b6.ctex"]
 
 [params]
 
