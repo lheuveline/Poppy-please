@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://d1hj6t5hq34jy" path="res://characters/character_1/character1.gd" id="1_rh6c5"]
 [ext_resource type="AudioStream" uid="uid://bg5dpjsgdqxnd" path="res://audio/KSHMR_Vocal_Shout_33_Whoo_C#.wav" id="3_66nm0"]
+[ext_resource type="Texture2D" uid="uid://b7v8awvu1djrq" path="res://characters/mask/mask.png" id="3_bd2ai"]
 [ext_resource type="AudioStream" uid="uid://vjpc5lsxlwmk" path="res://audio/195937__michimuc2__short-wind-noise-soft.wav" id="3_be74f"]
 [ext_resource type="AudioStream" uid="uid://bv0w5i2bm3v85" path="res://audio/GGJ-2026-clickable-true.wav" id="5_20pwa"]
 [ext_resource type="Script" uid="uid://duj08v50puc5w" path="res://characters/mask/control_mask.gd" id="5_44k5u"]
@@ -28,6 +29,10 @@ attenuation = 6.0
 volume_db = -80.0
 autoplay = true
 attenuation = 6.0
+
+[node name="MaskIndicator" type="Sprite2D" parent="." unique_id=319717214]
+visible = false
+texture = ExtResource("3_bd2ai")
 
 [node name="Mask" type="Node2D" parent="." unique_id=1447723491 node_paths=PackedStringArray("good_track", "bad_track", "mask_pushed_sound", "mask_pulled_sound", "character")]
 script = ExtResource("5_44k5u")

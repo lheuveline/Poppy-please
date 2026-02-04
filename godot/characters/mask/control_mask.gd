@@ -5,6 +5,7 @@ extends Node2D
 @export var mask_pushed_sound: AudioStreamPlayer2D
 @export var mask_pulled_sound: AudioStreamPlayer2D
 @export var character: Node2D
+
 @onready var chara_scene = "res://characters/character_1/character1.tscn"
 
 func _process(_delta: float) -> void:
@@ -25,9 +26,7 @@ func _process(_delta: float) -> void:
 			return
 
 func switch_track():
-		#print("[control_mask] Tracks switched, mask pushed signal emitted")
 		character.plays_good = !character.plays_good
 		var temp = good_track.volume_linear
 		good_track.volume_linear = bad_track.volume_linear
 		bad_track.volume_linear = temp
-		#add signal to check if plays good
