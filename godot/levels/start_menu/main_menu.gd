@@ -1,17 +1,33 @@
 extends CanvasLayer
 
+@onready var anim_player = $AnimationPlayer
+@onready var start_button = $Buttons/Start
+@onready var start_audio = $Audio/StartKeyPressed
+@onready var credits_audio = $Audio/CreditsKeyPressed
+@onready var quit_audio = $Audio/QuitKeyPressed
+
 func _ready():
-	$VBoxContainer/Start.grab_focus()
+	assert(anim_player)
+	assert(start_button)
+	assert(start_audio)
+	assert(credits_audio)
+	assert(quit_audio)
+	start_button.grab_focus()
 
 func _on_start_pressed() -> void:
-	$Audio/StartKeyPressed.play()
-	get_tree().change_scene_to_file("res://levels/level_1/level_1.tscn")
+	start_audio.play()
+	anim_player.play("fade_out")
+	await anim_player.animation_finished
+	get_tree().change_scene_to_file.call_deferred("res://levels/level_1/level_1.tscn")
 
 func _on_credits_pressed() -> void:
-	$Audio/CreditsKeyPressed.play()
-	get_tree().change_scene_to_file("res://levels/credits/credits.tscn")
+	credits_audio.play()
+	anim_player.play("fade_out")
+	await anim_player.animation_finished
+	get_tree().change_scene_to_file.call_deferred("res://levels/credits/credits.tscn")
 
 func _on_quit_pressed() -> void:
-	$Audio/QuitKeyPressed.play()
-	await get_tree().create_timer(0.3).timeout
-	get_tree().quit()
+	quit_audio.play()
+	anim_player.play("quit")
+	await anim_player.animation_finished
+	get_tree().quit.call_deferred()

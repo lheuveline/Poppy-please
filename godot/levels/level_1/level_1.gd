@@ -1,9 +1,11 @@
 extends Node2D
+
 var musician_list: Array
 var not_won = true
 @onready var hud_scene = "res://ui/hud.tscn"
 
 func _ready() -> void:
+	assert(hud_scene)
 	var char_nodes = get_tree().get_nodes_in_group("characters")
 	for node in char_nodes:
 		musician_list.append(node)

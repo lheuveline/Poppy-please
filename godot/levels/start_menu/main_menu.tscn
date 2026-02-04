@@ -25,6 +25,146 @@ corner_radius_top_right = 16
 corner_radius_bottom_right = 16
 corner_radius_bottom_left = 16
 
+[sub_resource type="Animation" id="Animation_pmqns"]
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransition:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Audio/MainTheme:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Audio/MainTheme:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ob17i"]
+resource_name = "fade_in"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransition:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Audio/MainTheme:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-50.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Audio/MainTheme:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.13333334),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_uuqnp"]
+resource_name = "fade_out"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransition:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19999999),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Audio/MainTheme:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -50.0]
+}
+
+[sub_resource type="Animation" id="Animation_716sv"]
+resource_name = "quit"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SceneTransition:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Audio/MainTheme:volume_db")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.033333335, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, -50.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pmqns"]
+_data = {
+&"RESET": SubResource("Animation_pmqns"),
+&"fade_in": SubResource("Animation_ob17i"),
+&"fade_out": SubResource("Animation_uuqnp"),
+&"quit": SubResource("Animation_716sv")
+}
+
 [node name="MainMenu" type="CanvasLayer" unique_id=1191851457]
 script = ExtResource("1_jix8l")
 
@@ -52,7 +192,7 @@ text = "Mask that cacophonia !"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1933118268]
+[node name="Buttons" type="VBoxContainer" parent="." unique_id=1933118268]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -67,7 +207,7 @@ grow_vertical = 2
 theme_override_constants/separation = 50
 metadata/_edit_group_ = true
 
-[node name="Start" type="Button" parent="VBoxContainer" unique_id=1317193441]
+[node name="Start" type="Button" parent="Buttons" unique_id=1317193441]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9183024, 0.8959569, 0.7560493, 1)
 theme_override_fonts/font = SubResource("FontVariation_7vrkn")
@@ -75,7 +215,7 @@ theme_override_font_sizes/font_size = 92
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Start"
 
-[node name="Credits" type="Button" parent="VBoxContainer" unique_id=1593511198]
+[node name="Credits" type="Button" parent="Buttons" unique_id=1593511198]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.91764706, 0.89411765, 0.75686276, 1)
 theme_override_fonts/font = SubResource("FontVariation_7vrkn")
@@ -83,7 +223,7 @@ theme_override_font_sizes/font_size = 92
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Credits"
 
-[node name="Quit" type="Button" parent="VBoxContainer" unique_id=448907699]
+[node name="Quit" type="Button" parent="Buttons" unique_id=448907699]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9183024, 0.8959569, 0.7560493, 1)
 theme_override_fonts/font = SubResource("FontVariation_7vrkn")
@@ -91,11 +231,24 @@ theme_override_font_sizes/font_size = 92
 theme_override_styles/normal = SubResource("StyleBoxFlat_fu7sn")
 text = "Quit"
 
+[node name="SceneTransition" type="ColorRect" parent="." unique_id=637401130]
+modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1195555013]
+libraries/ = SubResource("AnimationLibrary_pmqns")
+autoplay = &"fade_in"
+
 [node name="Audio" type="Node" parent="." unique_id=1184439593]
 
 [node name="MainTheme" type="AudioStreamPlayer" parent="Audio" unique_id=382382254]
 stream = ExtResource("5_xcxou")
-autoplay = true
 
 [node name="StartKeyPressed" type="AudioStreamPlayer" parent="Audio" unique_id=675996537]
 stream = ExtResource("6_ob17i")
@@ -106,6 +259,6 @@ stream = ExtResource("7_uuqnp")
 [node name="QuitKeyPressed" type="AudioStreamPlayer" parent="Audio" unique_id=914467757]
 stream = ExtResource("8_pmqns")
 
-[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/Credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Buttons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Buttons/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Buttons/Quit" to="." method="_on_quit_pressed"]
