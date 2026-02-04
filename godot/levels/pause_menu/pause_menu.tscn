@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://i7bfioablum8"]
 
 [ext_resource type="Script" uid="uid://8k8iuvvhixmp" path="res://levels/pause_menu/pause_menu.gd" id="1_05uyy"]
-[ext_resource type="Texture2D" uid="uid://cpb53apopdg5n" path="res://levels/pause_menu/play.png" id="1_nwcfo"]
-[ext_resource type="Texture2D" uid="uid://flme2od6bunq" path="res://levels/pause_menu/restart.png" id="2_05uyy"]
+[ext_resource type="Texture2D" uid="uid://cpb53apopdg5n" path="res://levels/pause_menu/icon_play.png" id="1_nwcfo"]
+[ext_resource type="Texture2D" uid="uid://flme2od6bunq" path="res://levels/pause_menu/icon_restart.png" id="2_05uyy"]
 [ext_resource type="AudioStream" uid="uid://cwf8pmnr8xbj1" path="res://audio/782151__oceansonmars__bubbleupfastdelfx_01-soft.wav" id="4_avurv"]
-[ext_resource type="Texture2D" uid="uid://cl3frtffsc4bd" path="res://levels/pause_menu/cross.png" id="4_kudsv"]
+[ext_resource type="Texture2D" uid="uid://cl3frtffsc4bd" path="res://levels/pause_menu/icon_cross.png" id="4_kudsv"]
 
 [sub_resource type="Animation" id="Animation_p81d2"]
 length = 0.001

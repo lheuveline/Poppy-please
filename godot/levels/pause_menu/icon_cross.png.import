@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpb53apopdg5n"
-path="res://.godot/imported/play.png-bc8c91057dc4a989d4712b7aeddb0384.ctex"
+uid="uid://cl3frtffsc4bd"
+path="res://.godot/imported/icon_cross.png-dd976e1541df345969c41f18db1185ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/pause_menu/play.png"
-dest_files=["res://.godot/imported/play.png-bc8c91057dc4a989d4712b7aeddb0384.ctex"]
+source_file="res://levels/pause_menu/icon_cross.png"
+dest_files=["res://.godot/imported/icon_cross.png-dd976e1541df345969c41f18db1185ca.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://flme2od6bunq"
-path="res://.godot/imported/restart.png-6386fba3c95e30719699696da3a7c51a.ctex"
+path="res://.godot/imported/icon_restart.png-46e30608b1366b3db78368e2059da658.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/pause_menu/restart.png"
-dest_files=["res://.godot/imported/restart.png-6386fba3c95e30719699696da3a7c51a.ctex"]
+source_file="res://levels/pause_menu/icon_restart.png"
+dest_files=["res://.godot/imported/icon_restart.png-46e30608b1366b3db78368e2059da658.ctex"]
 
 [params]
 
