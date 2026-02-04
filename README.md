@@ -53,3 +53,14 @@ Credits for all tools and libraries used by the game.
 - [wsmind](https://github.com/wsmind) (music)
 - [AuroreCello](https://github.com/AuroreCello) (music)
 - [Geekymoose](https://github.com/geekymoose) (art)
+
+# Screenshots
+
+Welcome page
+![welcome](doc/screenshot_welcome.png)
+
+Level
+![ingame](doc/screenshot_ingame.png)
+
+Victory
+![victory](doc/screenshot_victory.png)
