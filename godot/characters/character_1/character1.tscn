@@ -55,6 +55,7 @@ stream = ExtResource("5_20pwa")
 stream = ExtResource("6_y5x5e")
 
 [node name="MaskFx" type="CPUParticles2D" parent="." unique_id=98952053]
+visible = false
 lifetime = 5.0
 emission_shape = 6
 emission_ring_inner_radius = 0.8
