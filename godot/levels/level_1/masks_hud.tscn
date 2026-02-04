@@ -87,10 +87,16 @@ script = ExtResource("1_e6xny")
 mask_icons = NodePath("Masks")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=946993744]
-offset_left = 11.0
-offset_top = 134.0
-offset_right = 233.0
-offset_bottom = 1031.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -7.0
+offset_right = -1708.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
 
 [node name="Masks" type="VBoxContainer" parent="." unique_id=577845670]
 anchors_preset = -1
@@ -109,31 +115,31 @@ theme_override_constants/separation = 10
 alignment = 1
 
 [node name="Mask1" type="AnimatedSprite2D" parent="Masks" unique_id=2107149975]
-position = Vector2(274.76, 319.99988)
+position = Vector2(223.5, 321.16666)
 sprite_frames = SubResource("SpriteFrames_spcu4")
 autoplay = "default"
 frame_progress = 0.55523485
 
 [node name="Mask2" type="AnimatedSprite2D" parent="Masks" unique_id=719694736]
-position = Vector2(274.76, 896.6665)
+position = Vector2(223.5, 897.8333)
 sprite_frames = SubResource("SpriteFrames_mp5xd")
 autoplay = "default"
 frame_progress = 0.73466593
 
 [node name="Mask3" type="AnimatedSprite2D" parent="Masks" unique_id=1506660638]
-position = Vector2(274.76, 1413.3335)
+position = Vector2(223.5, 1414.5002)
 sprite_frames = SubResource("SpriteFrames_u6vop")
 autoplay = "default"
 frame_progress = 0.6140533
 
 [node name="Mask4" type="AnimatedSprite2D" parent="Masks" unique_id=256828879]
-position = Vector2(274.76, 2096.666)
+position = Vector2(223.5, 2097.8328)
 sprite_frames = SubResource("SpriteFrames_xtm2r")
 autoplay = "default"
 frame_progress = 0.12140108
 
 [node name="Mask5" type="AnimatedSprite2D" parent="Masks" unique_id=445531436]
-position = Vector2(274.76, 2593.334)
+position = Vector2(223.49998, 2594.5007)
 scale = Vector2(0.7064359, 0.7064359)
 sprite_frames = SubResource("SpriteFrames_kc1f2")
 autoplay = "default"
