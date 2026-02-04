@@ -27,6 +27,7 @@ animations = [{
 [node name="Sprite" parent="Character" index="0" unique_id=177601966]
 sprite_frames = SubResource("SpriteFrames_6jrdx")
 animation = &"idle"
+
 [node name="GoodTrack" parent="Character" index="1" unique_id=41276720]
 stream = ExtResource("4_s6bp6")
 

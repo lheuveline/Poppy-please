@@ -135,7 +135,7 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 14
 theme_override_fonts/font = SubResource("FontVariation_nhiow")
 theme_override_font_sizes/font_size = 39
-text = "Press SPACE / A to return to main menu."
+text = "Press SPACE to return to main menu."
 
 [node name="Label2" type="Label" parent="." unique_id=1315841241]
 modulate = Color(1, 1, 1, 0)
