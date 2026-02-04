@@ -18,9 +18,9 @@ Cover those who need it with the right mask, and save the orchestra's performanc
 
 # Controls
 
-- `Arrows` to move (or stick controller)
+- `Arrows` to move (or `WASD`)
 - `Space` to place mask
-- `Esc/Start` to pause
+- `Esc` to pause
 
 # Music
 
