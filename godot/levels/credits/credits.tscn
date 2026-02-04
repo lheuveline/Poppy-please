@@ -337,10 +337,15 @@ offset_top = -26.360046
 offset_right = 25.119873
 offset_bottom = 13.639954
 
-[node name="Onara2" type="Sprite2D" parent="Onara" unique_id=994824740]
-position = Vector2(12, -25)
-scale = Vector2(0.34504414, 0.34504414)
+[node name="TextureRect" type="TextureRect" parent="Onara" unique_id=1533942491]
+layout_mode = 0
+offset_left = -342.0
+offset_top = -292.0
+offset_right = 355.0
+offset_bottom = 230.0
 texture = ExtResource("5_xit1c")
+expand_mode = 2
+stretch_mode = 5
 
 [node name="return" type="Button" parent="." unique_id=868037989]
 anchors_preset = -1
