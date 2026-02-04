@@ -17,6 +17,7 @@ func _process(_delta: float) -> void:
 	for character in musician_list:
 		all_good = all_good && character.plays_good
 	if all_good and not_won:
+		$monocle/AudioListener2D.clear_current()
 		GlobalData.game_won.emit()
 		not_won = false
 		
