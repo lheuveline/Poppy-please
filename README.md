@@ -50,7 +50,7 @@ Credits for all tools and libraries used by the game.
 - [Eva](https://github.com/saltyswan) (programming, game design)
 - [Tiny](https://github.com/missfromaj) (ui, art)
 - [Louis](https://github.com/lheuveline) (music, programming)
-- [wsmind](https://github.com/wsmind) (music, programming)
+- [Wsmind](https://github.com/wsmind) (music, programming)
 - [AuroreCello](https://github.com/AuroreCello) (music)
 - [Geekymoose](https://github.com/geekymoose) (art, programming)
 
