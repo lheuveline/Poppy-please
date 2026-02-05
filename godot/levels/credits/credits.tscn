@@ -67,7 +67,8 @@ theme_override_constants/shadow_offset_y = -7
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 29
-text = "Art"
+text = "Art
+Programming"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -110,7 +111,7 @@ theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 29
 text = "Music
-Dev"
+Programming"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -194,8 +195,8 @@ theme_override_constants/shadow_offset_y = -7
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 29
-text = "Art
-UI"
+text = "UI
+Art"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -238,7 +239,7 @@ theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 29
 text = "Music
-Dev"
+Programming"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -280,8 +281,8 @@ theme_override_constants/shadow_offset_y = -7
 theme_override_constants/outline_size = 38
 theme_override_fonts/font = ExtResource("2_n2fpc")
 theme_override_font_sizes/font_size = 29
-text = "Prog
-Producing"
+text = "Programming
+Game Design"
 horizontal_alignment = 1
 vertical_alignment = 1
 
