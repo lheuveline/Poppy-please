@@ -3,7 +3,8 @@
 ![cover](cover.png)
 
 - GlobalGameJam 2026
-- https://globalgamejam.org/games/2026/mask-cacophonia-2
+- [Itch.io final version](to-be-announced-soon)
+- [Original submission](https://globalgamejam.org/games/2026/mask-cacophonia-2)
 - Spot the cacophony makers and mask them in the name of good music!
 
 # Synopsis
@@ -30,10 +31,13 @@ It was pretty fun and really unexpected to see them playing the "bad" lines requ
 
 # Gamejam style
 
-This game is primarily a demonstration of an idea.
-We focused heavily on the music.
-As the team was relatively new to each area of expertise (except on the music side), it was already a good challenge.
-But most importantly, we had a lot of fun making it.
+This game was created in 48 hours during the GlobalGameJam 2026.
+After the jam, we spent an additional week polishing and fixing bugs.
+We did some cleanup, added transitions and a victory screen, but did not introduce any new content.
+
+The project is primarily a demonstration of an idea, with a strong emphasis on music.
+Most of the team was relatively new to their respective areas of expertise (with the exception of music).
+It was a rewarding challenge, but most importantly, we had a lot of fun making it.
 Thank you all for such a great time!
 
 # Credits
