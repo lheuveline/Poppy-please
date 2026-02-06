@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfb0nr8i0x8px"
-path="res://.godot/imported/credits_background.jpg-ad6e847f030f08446a21545c74e6541f.ctex"
+uid="uid://cpb53apopdg5n"
+path="res://.godot/imported/icon_play.png-4c1d50a86e5d50ef69abee7424f40251.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/credits/credits_background.jpg"
-dest_files=["res://.godot/imported/credits_background.jpg-ad6e847f030f08446a21545c74e6541f.ctex"]
+source_file="res://scenes/pause_menu/icon_play.png"
+dest_files=["res://.godot/imported/icon_play.png-4c1d50a86e5d50ef69abee7424f40251.ctex"]
 
 [params]
 

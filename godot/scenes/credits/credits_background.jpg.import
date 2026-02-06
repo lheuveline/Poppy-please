@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8ghaodjgclct"
-path="res://.godot/imported/background_welcome.png-44b0b79f75c661a792e847e2b0a7b1a9.ctex"
+uid="uid://bfb0nr8i0x8px"
+path="res://.godot/imported/credits_background.jpg-a2e8a87b43335c12643e6b3824c45ffe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/start_menu/background_welcome.png"
-dest_files=["res://.godot/imported/background_welcome.png-44b0b79f75c661a792e847e2b0a7b1a9.ctex"]
+source_file="res://scenes/credits/credits_background.jpg"
+dest_files=["res://.godot/imported/credits_background.jpg-a2e8a87b43335c12643e6b3824c45ffe.ctex"]
 
 [params]
 

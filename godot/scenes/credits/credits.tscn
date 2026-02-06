@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://wvl225y4a7aq"]
 
-[ext_resource type="Script" uid="uid://d3j7trxiq5o07" path="res://levels/credits/credits.gd" id="1_vhhfy"]
-[ext_resource type="Texture2D" uid="uid://bfb0nr8i0x8px" path="res://levels/credits/credits_background.jpg" id="1_yksct"]
+[ext_resource type="Script" uid="uid://d3j7trxiq5o07" path="res://scenes/credits/credits.gd" id="1_vhhfy"]
+[ext_resource type="Texture2D" uid="uid://bfb0nr8i0x8px" path="res://scenes/credits/credits_background.jpg" id="1_yksct"]
 [ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="2_iipf6"]
 [ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/roboto_regular.ttf" id="2_n2fpc"]
-[ext_resource type="Texture2D" uid="uid://bgyse3l4r5kcw" path="res://levels/credits/onara.png" id="5_xit1c"]
+[ext_resource type="Texture2D" uid="uid://bgyse3l4r5kcw" path="res://scenes/credits/onara.png" id="5_xit1c"]
 
 [sub_resource type="FontVariation" id="FontVariation_n2fpc"]
 base_font = ExtResource("2_iipf6")

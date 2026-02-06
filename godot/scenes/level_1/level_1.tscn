@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://beb7rd2gven0n"]
 
-[ext_resource type="Script" uid="uid://bj2oof3xqahma" path="res://levels/level_1/level_1.gd" id="1_jirdo"]
-[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://levels/level_1/background_game.png" id="3_bt44k"]
+[ext_resource type="Script" uid="uid://bj2oof3xqahma" path="res://scenes/level_1/level_1.gd" id="1_jirdo"]
+[ext_resource type="Texture2D" uid="uid://c6abiewngqwsi" path="res://scenes/level_1/background_game.png" id="3_bt44k"]
 [ext_resource type="PackedScene" uid="uid://bc4seuffuekr4" path="res://player/player.tscn" id="4_kx6l7"]
-[ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://levels/pause_menu/pause_menu.tscn" id="6_btoec"]
-[ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://levels/level_1/masks_hud.tscn" id="7_gwceb"]
+[ext_resource type="PackedScene" uid="uid://i7bfioablum8" path="res://scenes/pause_menu/pause_menu.tscn" id="6_btoec"]
+[ext_resource type="PackedScene" uid="uid://dmq68lk28uxuu" path="res://scenes/level_1/masks_hud.tscn" id="7_gwceb"]
 [ext_resource type="PackedScene" uid="uid://yf2f68drlvqj" path="res://characters/worm/worm.tscn" id="8_j48du"]
 [ext_resource type="PackedScene" uid="uid://c3quf2ct0v1vm" path="res://characters/popotam/popotam.tscn" id="9_8jbay"]
 [ext_resource type="PackedScene" uid="uid://m232tc17nk3l" path="res://characters/spider/spider.tscn" id="10_hyp3v"]
 [ext_resource type="PackedScene" uid="uid://cjmvcdynym411" path="res://characters/otter/otter.tscn" id="10_la5aw"]
 [ext_resource type="PackedScene" uid="uid://uwafp4c1hvn4" path="res://characters/panda/panda.tscn" id="10_qbdb0"]
-[ext_resource type="PackedScene" uid="uid://jpe4xbkugkm4" path="res://levels/victory_menu/victory.tscn" id="11_qbdb0"]
+[ext_resource type="PackedScene" uid="uid://jpe4xbkugkm4" path="res://scenes/victory_menu/victory.tscn" id="11_qbdb0"]
 
 [sub_resource type="Animation" id="Animation_hyp3v"]
 length = 0.001

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c6abiewngqwsi"
-path="res://.godot/imported/background_game.png-87ce9de6a8af05956782c2b889e28835.ctex"
+uid="uid://cl3frtffsc4bd"
+path="res://.godot/imported/icon_cross.png-ab0e5eb32eecc55eac7987ced3de3208.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/level_1/background_game.png"
-dest_files=["res://.godot/imported/background_game.png-87ce9de6a8af05956782c2b889e28835.ctex"]
+source_file="res://scenes/pause_menu/icon_cross.png"
+dest_files=["res://.godot/imported/icon_cross.png-ab0e5eb32eecc55eac7987ced3de3208.ctex"]
 
 [params]
 

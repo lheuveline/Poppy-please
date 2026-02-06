@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://flme2od6bunq"
-path="res://.godot/imported/icon_restart.png-46e30608b1366b3db78368e2059da658.ctex"
+uid="uid://b8ghaodjgclct"
+path="res://.godot/imported/background_welcome.png-211e1e55d708250f811ed3ce2e2c7f36.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://levels/pause_menu/icon_restart.png"
-dest_files=["res://.godot/imported/icon_restart.png-46e30608b1366b3db78368e2059da658.ctex"]
+source_file="res://scenes/start_menu/background_welcome.png"
+dest_files=["res://.godot/imported/background_welcome.png-211e1e55d708250f811ed3ce2e2c7f36.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dmq68lk28uxuu"]
 
-[ext_resource type="Script" uid="uid://db5gw7cjhraba" path="res://levels/level_1/masks_hud.gd" id="1_e6xny"]
+[ext_resource type="Script" uid="uid://db5gw7cjhraba" path="res://scenes/level_1/masks_hud.gd" id="1_e6xny"]
 [ext_resource type="Texture2D" uid="uid://mrxwamg8iexy" path="res://characters/mask/Masqueethereal.png" id="2_vnobm"]
 [ext_resource type="Texture2D" uid="uid://j31nli5ol7oa" path="res://characters/mask/masquebois2.png" id="3_8lalm"]
 [ext_resource type="Texture2D" uid="uid://bnd4gxoqmovw5" path="res://characters/mask/masquetielle.png" id="4_lah4l"]

@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://jpe4xbkugkm4"]
 
-[ext_resource type="Script" uid="uid://x3tq2nsmloqt" path="res://levels/victory_menu/victory.gd" id="1_lk8il"]
+[ext_resource type="Script" uid="uid://x3tq2nsmloqt" path="res://scenes/victory_menu/victory.gd" id="1_lk8il"]
 [ext_resource type="FontFile" uid="uid://ffrf4cilbsqv" path="res://themes/roboto_regular.ttf" id="2_lo5dy"]
 [ext_resource type="FontFile" uid="uid://cynsf6h0lboxh" path="res://themes/melt_swashes.ttf" id="3_1j4n4"]
 [ext_resource type="AudioStream" uid="uid://vqnq2sr0kvf3" path="res://audio/GGJ-2026-victory.wav" id="4_cjubk"]
-[ext_resource type="Shader" uid="uid://xy3swgq3mcpu" path="res://levels/victory_menu/vignette.gdshader" id="4_wye05"]
+[ext_resource type="Shader" uid="uid://xy3swgq3mcpu" path="res://scenes/victory_menu/vignette.gdshader" id="4_wye05"]
 
 [sub_resource type="FontVariation" id="FontVariation_nhiow"]
 base_font = ExtResource("2_lo5dy")
