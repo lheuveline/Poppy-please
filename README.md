@@ -3,6 +3,7 @@
 ![cover](cover.png)
 
 - GlobalGameJam 2026
+- Godot v4.6
 - [Itch.io final version](to-be-announced-soon)
 - [Original submission](https://globalgamejam.org/games/2026/mask-cacophonia-2)
 - Spot the cacophony makers and mask them in the name of good music!
@@ -44,8 +45,9 @@ Thank you all for such a great time!
 
 Credits for all tools and libraries used by the game.
 
-- [Godot Debug Menu](https://github.com/godot-extended-libraries/godot-debug-menu)
 - [Godot](https://godotengine.org/)
+- [Godot SFXR](https://github.com/tomeyro/godot-sfxr)
+- [Godot Debug Menu](https://github.com/godot-extended-libraries/godot-debug-menu)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Krita](https://krita.org/en/)
 
