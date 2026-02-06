@@ -4,7 +4,7 @@
 
 - GlobalGameJam 2026
 - Godot v4.6
-- [Itch.io final version](to-be-announced-soon)
+- [Itch.io final version](https://geekymoose.itch.io/maskthatcacophonia)
 - [Original submission](https://globalgamejam.org/games/2026/mask-cacophonia-2)
 - Spot the cacophony makers and mask them in the name of good music!
 
