@@ -18,9 +18,9 @@ Cover those who need it with the right mask, and save the orchestra's performanc
 
 # Controls
 
-- `Arrows` to move (or `WASD`)
-- `Space` to place mask
-- `Esc` to pause
+- Move with `Arrows` or `WASD`
+- Interact with `Space` (or `left click`)
+- Pause with `Esc`
 
 # Music
 
@@ -42,7 +42,7 @@ Credits for all tools and libraries used by the game.
 
 - [Godot Debug Menu](https://github.com/godot-extended-libraries/godot-debug-menu)
 - [Godot](https://godotengine.org/)
-- [Visual Code](https://code.visualstudio.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 - [Krita](https://krita.org/en/)
 
 # Team
