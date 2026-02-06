@@ -18,13 +18,13 @@ func _on_start_pressed() -> void:
 	start_audio.play()
 	anim_player.play("fade_out")
 	await anim_player.animation_finished
-	get_tree().change_scene_to_file.call_deferred("res://levels/level_1/level_1.tscn")
+	get_tree().change_scene_to_file.call_deferred("res://scenes/level_1/level_1.tscn")
 
 func _on_credits_pressed() -> void:
 	credits_audio.play()
 	anim_player.play("fade_out")
 	await anim_player.animation_finished
-	get_tree().change_scene_to_file.call_deferred("res://levels/credits/credits.tscn")
+	get_tree().change_scene_to_file.call_deferred("res://scenes/credits/credits.tscn")
 
 func _on_quit_pressed() -> void:
 	quit_audio.play()

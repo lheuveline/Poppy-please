@@ -14,4 +14,4 @@ func on_game_won():
 
 func _process(_delta: float) -> void:
 	if game_won && Input.is_action_pressed("throw_mask"):
-		get_tree().change_scene_to_file("res://levels/start_menu/main_menu.tscn")
+		get_tree().change_scene_to_file("res://scenes/start_menu/main_menu.tscn")

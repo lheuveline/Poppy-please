@@ -32,7 +32,7 @@ func _on_restart_pressed():
 
 func _on_leave_pressed() -> void:
 	resume()
-	get_tree().change_scene_to_file("res://levels/start_menu/main_menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/start_menu/main_menu.tscn")
 
 func _process(_delta):
 	if Input.is_action_just_pressed("esc"):
