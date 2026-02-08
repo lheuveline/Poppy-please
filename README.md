@@ -63,10 +63,10 @@ Credits for all tools and libraries used by the game.
 # Screenshots
 
 Welcome page
-![welcome](doc/screenshot_welcome.png)
+![welcome](doc/2026-02-05_screenshot_welcome.png)
 
 Level
-![ingame](doc/screenshot_ingame.png)
+![ingame](doc/2026-02-05_screenshot_ingame.png)
 
 Victory
-![victory](doc/screenshot_victory.png)
+![victory](doc/2026-02-05_screenshot_victory.png)
